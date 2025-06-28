@@ -5,6 +5,7 @@ import { animate, scroll, easeInOut, easeOut, circOut, inView } from "motion";
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
 const logo = document.getElementById("nav-logo");
+const nav = document.getElementById('navbar');
 
 window.addEventListener("resize", () => {
   if (window.innerWidth >= 768) {
@@ -31,8 +32,10 @@ window.addEventListener("scroll", () => {
 
   if (scrollTop > 100) {
     logo.style.height = "44px";
+    nav.classList.add('main-gradient')
   } else {
     logo.style.height = "64px";
+    nav.classList.remove("main-gradient")
   }
 });
 

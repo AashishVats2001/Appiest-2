@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #00bade;
-  --color-primary-2: #4a77f4;
+  --color-primary: #7645dd;
+  --color-primary-2: #e090ec;
   --color-secondary: #3e4555;
   --color-accent: #eaeff3;
 
@@ -17,6 +17,34 @@
   --color-border: #e5e7eb;
   --color-background: #ffff;
   --color-surface: #f9fafb;
+}
+
+@layer utilities {
+  .marquee-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .marquee-track {
+    display: flex;
+    width: fit-content;
+    animation: scroll-marquee 10s linear infinite;
+    will-change: transform;
+  }
+
+  .group:hover .marquee-track {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll-marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 ::-moz-selection {
@@ -49,18 +77,15 @@ html {
 }
 
 .main-gradient {
-  background: linear-gradient(
-    to right,
-    var(--color-primary),
-    var(--color-primary-2)
-  );
+  background: linear-gradient(to right,
+      var(--color-primary),
+      var(--color-primary-2));
 }
+
 .button-gradient {
-  background: linear-gradient(
-    to right,
-    var(--color-primary),
-    var(--color-primary-2)
-  );
+  background: linear-gradient(to right,
+      var(--color-primary),
+      var(--color-primary-2));
   transition: all;
 }
 
@@ -68,23 +93,52 @@ html {
   background: var(--color-primary);
 }
 
+.icon-gradient {
+  background: linear-gradient(to right, var(--color-primary), var(--color-primary-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
 .section-title {
-  color: var(--color-text-secondary);
-  @apply rounded-full px-3 py-1 text-xs lg:text-sm;
+  color: var(--color-muted);
+  @apply text-xs lg:text-sm;
 }
 
 /* Pricing Section */
-.plan-list > li::before {
+.plan-list>li::before {
   font-family: "Font Awesome 6 Free";
   content: "\f058";
   @apply font-black me-2.5 antialiased;
 }
 
-.pricing-info-list > li::before {
+.pricing-info-list>li::before {
   font-family: "Font Awesome 6 Free";
   content: "\f058";
   color: var(--color-info);
   @apply font-black me-2.5 antialiased;
 }
 
-/* Team Member */
+
+.link {
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -0.3125rem;
+  height: 2px;
+  width: 0;
+  left: 50%;
+  margin: 0 auto;
+  background-color: white;
+  transition: 300ms linear;
+  transition-property: all;
+}
+
+.link:hover::after {
+  left: 0;
+  width: 100%;
+}
