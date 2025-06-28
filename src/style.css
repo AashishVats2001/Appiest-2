@@ -37,10 +37,35 @@
     animation-play-state: paused;
   }
 
+  .pricing-button {
+    background-color: var(--color-surface);
+  }
+
+  .pricing-button:hover {
+    background: linear-gradient(to right,
+        var(--color-primary),
+        var(--color-primary-2));
+  }
+
+  .pricing-button>button {
+    background: linear-gradient(to right,
+        var(--color-primary),
+        var(--color-primary-2));
+    color: var(--color-text-secondary);
+  }
+
+  .pricing-button:hover button {
+    background: linear-gradient(to right,
+        var(--color-surface),
+        var(--color-surface));
+    color: var(--color-text);
+  }
+
   @keyframes scroll-marquee {
     0% {
       transform: translateX(0%);
     }
+
     100% {
       transform: translateX(-50%);
     }
@@ -109,13 +134,14 @@ html {
 .plan-list>li::before {
   font-family: "Font Awesome 6 Free";
   content: "\f058";
+  color: var(--color-primary);
   @apply font-black me-2.5 antialiased;
 }
 
 .pricing-info-list>li::before {
   font-family: "Font Awesome 6 Free";
   content: "\f058";
-  color: var(--color-info);
+  color: var(--color-primary);
   @apply font-black me-2.5 antialiased;
 }
 
