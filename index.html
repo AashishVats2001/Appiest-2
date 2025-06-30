@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Appiest Template 2</title>
+    <script type="module" crossorigin src="/appiest-2/assets/index-DPQyXq8x.js"></script>
+    <link rel="stylesheet" crossorigin href="/appiest-2/assets/index-D4Z3TGH9.css">
+  </head>
+
+  <body>
+    <div class="flex flex-col items-center">
+      <!-- Nav -->
+      <nav
+        id="navbar"
+        class="w-full flex justify-center items-center z-50 fixed border-b-[1px] border-b-[#9e9e9e] text-white"
+      >
+        <div
+          class="w-10/12 max-w-[1110px] flex justify-between items-center gap-2 py-4"
+        >
+          <img
+            id="nav-logo"
+            src="https://html.awaikenthemes.com/appiest/5-photo-editing-app-template/images/logo.png"
+            alt="Logo"
+            class="transition-all duration-300"
+            style="height: 64px"
+          />
+
+          <!-- Links -->
+          <!-- Desktop Nav -->
+          <div
+            class="gap-4 text-sm uppercase font-medium justify-center items-center max-lg:hidden"
+          >
+            <div
+              class="w-10/12 flex gap-y-4 gap-x-5 pb-0 items-center flex-row justify-between *:transition-all"
+            >
+              <a href="#home" class="link">Home</a>
+              <a href="#about" class="link">About</a>
+              <a href="#features" class="link">Features</a>
+              <a href="#pricing" class="link">Pricing</a>
+              <a href="#testimonial" class="link">Testimonial</a>
+              <a href="#inspirations" class="link">Pages</a>
+              <a href="/" class="link">Login/Signup</a>
+              <!-- <button
+                class="py-2 px-5 text-secondary bg-background rounded-full cursor-pointer"
+              >
+                Download
+              </button> -->
+            </div>
+          </div>
+
+          <!-- Mobile Nav -->
+
+          <div
+            id="nav-links"
+            class="absolute top-full left-0 right-0 overflow-hidden z-20 w-full lg:hidden gap-4 text-sm uppercase font-medium justify-center items-center main-gradient transition-all duration-500 ease-in-out"
+            style="max-height: 0px"
+          >
+            <div
+              class="w-10/12 mx-auto flex gap-y-4 gap-x-4 pb-4 lg:pb-0 items-start flex-col justify-between *:transition-all"
+            >
+              <a href="#home" class="link">Home</a>
+              <a href="#about" class="link">About</a>
+              <a href="#features" class="link">Features</a>
+              <a href="#pricing" class="link">Pricing</a>
+              <a href="#testimonial" class="link">Testimonial</a>
+              <a href="#inspirations" class="link">Pages</a>
+              <a href="/" class="link">Login/Signup</a>
+              <!-- <button
+                class="py-2 px-4 text-secondary bg-background rounded-full cursor-pointer"
+              >
+                Download
+              </button> -->
+            </div>
+          </div>
+          <!-- Hamburger (only visible on mobile) -->
+          <button id="menu-toggle" class="lg:hidden text-3xl text-white">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Hero  -->
+      <section
+        class="w-full flex justify-center main-gradient relative"
+        id="home"
+      >
+        <div
+          id="parallax-section"
+          class="w-full flex justify-center items-center relative overflow-hidden rounded-lg"
+        >
+          <!-- Banner -->
+          <div
+            class="absolute inset-0 h-[130%] w-full translate-y-[35%] lg:translate-y-[45%] will-change-transform bg-cover bg-center bg-[url('https://html.awaikenthemes.com/appiest/5-photo-editing-app-template/images/header-bg.jpg')]"
+            id="parallax-bg"
+          ></div>
+
+          <!-- Overlay to darken background -->
+          <div class="absolute inset-0 bg-black/20 z-[1]"></div>
+
+          <!-- Content -->
+          <div
+            class="w-11/12 md:w-full max-w-[1110px] z-10 flex flex-col lg:flex-row justify-center items-center gap-6 pt-32 pb-20 mx-auto text-white my-10"
+          >
+            <div class="flex flex-col gap-10 box-border px-5 pb-5">
+              <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold">
+                Let&apos;s collobrate with team We&apos;ve been expecting you.
+              </h1>
+              <p class="font-medium text-balance">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry&apos;s standard
+                dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled.
+              </p>
+
+              <form action="" class="flex items-stretch justify-start">
+                <input
+                  type="email"
+                  placeholder="name@company.com"
+                  class="bg-white placeholder:text-muted text-lg px-3 py-2 me-2"
+                />
+                <button
+                  type="submit"
+                  class="main-gradient px-3 py-2 font-semibold"
+                >
+                  Get Started
+                </button>
+              </form>
+            </div>
+            <!-- <img
+              src="https://html.awaikenthemes.com/appiest/5-photo-editing-app-template/images/header.png"
+              alt=""
+              class=""
+            /> -->
+            <div
+              class="w-36 h-36 main-gradient p-6 text-white rounded-full flex justify-center items-center text-5xl overflow-clip"
+            >
+              <i class="fa-solid fa-play fa-fw fa-2x"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <div class="w-full flex justify-center items-center py-16 lg:py-16">
+        <div
+          class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
+          id="about"
+        >
+          <div
+            class="flex flex-col justify-around items-center text-center gap-10"
+          >
+            <!-- About Title -->
+            <div class="flex flex-col gap-2 text-secondary items-center">
+              <span class="font-medium section-title">Short Introduction</span>
+              <h2 class="text-4xl font-bold text-balance">
+                Together let we run project successfully easily
+              </h2>
+            </div>
+
+            <!-- Description -->
+            <div class="flex flex-col gap-7 text-muted text-balance">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution.
+              </p>
+            </div>
+
+            <button
+              class="button-gradient px-3 py-2 text-lg font-semibold text-white"
+            >
+              Read More
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <!-- Stats -->
+            <!-- <div
+              id="stats"
+              class="grid grid-cols-1 md:grid-cols-4 gap-10 bg-accent justify-between items-center px-6 py-6 lg:translate-x-20"
+            >
+              <div
+                class="flex flex-col justify-evenly items-center text-muted gap-1"
+              >
+                <i class="fa-solid fa-download text-primary text-4xl"></i>
+                <p
+                  class="text-xl font-bold text-secondary opacity-80 hover:opacity-100 transition-all mt-2"
+                  id="count-download"
+                >
+                  2,100,000
+                </p>
+                <p class="text-xs">Apps Downloaded</p>
+              </div>
+              <div
+                class="flex flex-col justify-evenly items-center text-muted gap-1"
+              >
+                <i class="fa-solid fa-camera text-primary text-4xl"></i>
+                <p
+                  class="text-xl font-bold text-secondary opacity-80 hover:opacity-100 transition-all mt-2"
+                  id="count-photo"
+                >
+                  5,053,120
+                </p>
+                <p class="text-xs">Photo Generated</p>
+              </div>
+              <div
+                class="flex flex-col justify-evenly items-center text-muted gap-1"
+              >
+                <i class="fa-solid fa-flag text-primary text-4xl"></i>
+                <p
+                  class="text-xl font-bold text-secondary opacity-80 hover:opacity-100 transition-all mt-2"
+                  id="count-country"
+                >
+                  108
+                </p>
+                <p class="text-xs">Countries users</p>
+              </div>
+              <div
+                class="flex flex-col justify-evenly items-center text-muted gap-1"
+              >
+                <i class="fa-solid fa-user text-primary text-4xl"></i>
+                <p
+                  class="text-xl font-bold text-secondary opacity-80 hover:opacity-100 transition-all mt-2"
+                  id="count-user"
+                >
+                  +100,000
+                </p>
+                <p class="text-xs">Daily New Users</p>
+              </div>
+            </div> -->
+          </div>
+
+          <!-- <img
+            src="https://html.awaikenthemes.com/appiest/5-photo-editing-app-template/images/about.jpg"
+            alt="About Us"
+            class=""
+          /> -->
+        </div>
+      </div>
+
+      <!-- Feature Section -->
+      <div class="w-full flex justify-center items-center py-16">
+        <div
+          class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
+          id="features"
+        >
+          <div
+            class="flex flex-col justify-around items-center text-center gap-10"
+          >
+            <!-- Feature Title -->
+            <div class="flex flex-col gap-2 text-secondary items-center">
+              <span class="font-medium section-title"
+                >Feature Capabilities</span
+              >
+              <h2 class="text-4xl font-bold text-balance">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority
+              </h2>
+            </div>
+
+            <!-- Features -->
+            <div
+              class="flex flex-col md:flex-row gap-10 text-muted text-balance mt-10"
+            >
+              <!-- Feature -->
+              <div
+                class="flex flex-col justify-center items-center gap-6 group"
+              >
+                <i class="fa-solid fa-chart-column text-5xl icon-gradient"></i>
+
+                <h3 class="text-secondary text-lg font-semibold">
+                  Task Tracking
+                </h3>
+
+                <div class="w-full relative bg-accent h-[1px]">
+                  <div
+                    class="absolute w-0 bg-secondary h-[1px] group-hover:w-full left-[50%] group-hover:left-0 transition-all duration-300"
+                  ></div>
+                </div>
+
+                <p class="text-muted text-balance">
+                  There are many variations of pasaes of Lorem Ipsum available
+                </p>
+              </div>
+
+              <!-- Feature -->
+              <div
+                class="flex flex-col justify-center items-center gap-6 group"
+              >
+                <i class="fa-solid fa-chart-column text-5xl icon-gradient"></i>
+
+                <h3 class="text-secondary text-lg font-semibold">
+                  Task Tracking
+                </h3>
+
+                <div class="w-full relative bg-accent h-[1px]">
+                  <div
+                    class="absolute w-0 bg-secondary h-[1px] group-hover:w-full left-[50%] group-hover:left-0 transition-all duration-300"
+                  ></div>
+                </div>
+
+                <p class="text-muted text-balance">
+                  There are many variations of pasaes of Lorem Ipsum available
+                </p>
+              </div>
+
+              <!-- Feature -->
+              <div
+                class="flex flex-col justify-center items-center gap-6 group"
+              >
+                <i class="fa-solid fa-chart-column text-5xl icon-gradient"></i>
+
+                <h3 class="text-secondary text-lg font-semibold">
+                  Task Tracking
+                </h3>
+
+                <div class="w-full relative bg-accent h-[1px]">
+                  <div
+                    class="absolute w-0 bg-secondary h-[1px] group-hover:w-full left-[50%] group-hover:left-0 transition-all duration-300"
+                  ></div>
+                </div>
+
+                <p class="text-muted text-balance">
+                  There are many variations of pasaes of Lorem Ipsum available
+                </p>
+              </div>
+
+              <!-- Feature -->
+              <div
+                class="flex flex-col justify-center items-center gap-6 group"
+              >
+                <i class="fa-solid fa-chart-column text-5xl icon-gradient"></i>
+
+                <h3 class="text-secondary text-lg font-semibold">
+                  Task Tracking
+                </h3>
+
+                <div class="w-full relative bg-accent h-[1px]">
+                  <div
+                    class="absolute w-0 bg-secondary h-[1px] group-hover:w-full left-[50%] group-hover:left-0 transition-all duration-300"
+                  ></div>
+                </div>
+
+                <p class="text-muted text-balance">
+                  There are many variations of pasaes of Lorem Ipsum available
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature List -->
+            <div
+              class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-6"
+            >
+              <!-- Item 1 -->
+              <div class="flex items-start gap-2">
+                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
+                </div>
+                <span class="text-muted text-sm font-medium text-start"
+                  >Track Your Performance</span
+                >
+              </div>
+
+              <!-- Item 2 -->
+              <div class="flex items-start gap-2">
+                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
+                </div>
+                <span class="text-muted text-sm font-medium text-start"
+                  >Save drafts</span
+                >
+              </div>
+
+              <!-- Item 3 -->
+              <div class="flex items-start gap-2">
+                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
+                </div>
+                <span class="text-muted text-sm font-medium text-start"
+                  >Send automatic Reminders</span
+                >
+              </div>
+
+              <!-- Item 4 -->
+              <div class="flex items-start gap-2">
+                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
+                </div>
+                <span class="text-muted text-sm font-medium text-start"
+                  >Send Invoice</span
+                >
+              </div>
+
+              <!-- Item 5 -->
+              <div class="flex items-start gap-2">
+                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
+                </div>
+                <span class="text-muted text-sm font-medium text-start"
+                  >Preview Before Launching</span
+                >
+              </div>
+
+              <!-- Item 6 -->
+              <div class="flex items-start gap-2">
+                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
+                </div>
+                <span class="text-muted text-sm font-medium text-start"
+                  >Manage Clients</span
+                >
+              </div>
+
+              <!-- Item 7 -->
+              <div class="flex items-start gap-2">
+                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
+                </div>
+                <span class="text-muted text-sm font-medium text-start"
+                  >Track Performance</span
+                >
+              </div>
+
+              <!-- Item 8 -->
+              <div class="flex items-start gap-2">
+                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
+                </div>
+                <span class="text-muted text-sm font-medium text-start"
+                  >Instant status updates</span
+                >
+              </div>
+
+              <!-- Item 9 -->
+              <div class="flex items-start gap-2">
+                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
+                </div>
+                <span class="text-muted text-sm font-medium text-start"
+                  >Send automatic Reminders</span
+                >
+              </div>
+
+              <!-- Item 10 -->
+              <div class="flex items-start gap-2">
+                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
+                </div>
+                <span class="text-muted text-sm font-medium text-start"
+                  >Send Invoice</span
+                >
+              </div>
+
+              <!-- Item 11 -->
+              <div class="flex items-start gap-2">
+                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
+                </div>
+                <span class="text-muted text-sm font-medium text-start"
+                  >Multi-currency Dashboard</span
+                >
+              </div>
+
+              <!-- Item 12 -->
+              <div class="flex items-start gap-2">
+                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
+                </div>
+                <span class="text-muted text-sm font-medium text-start"
+                  >Summary and History</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inspirations -->
+      <div class="w-full flex justify-center bg-surface" id="inspirations">
+        <div
+          class="w-11/12 md:w-10/12 max-w-[1110px] flex gap-10 justify-center items-start"
+        >
+          <div
+            class="flex flex-col w-full md:w-8/12 gap-4 justify-center items-start py-20"
+          >
+            <!-- Heading -->
+            <div class="flex flex-col gap-2 items-start">
+              <span class="section-title font-medium">Inspirations</span>
+              <h2 class="text-text text-4xl md:text-2xl lg:text-3xl font-bold">
+                World best team run on appiest and they loved our product
+              </h2>
+            </div>
+
+            <!-- Description -->
+            <div
+              class="flex flex-col gap-3 mt-10 items-start justify-center text-wrap text-muted"
+            >
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem
+                Ipsum as their default model text,
+              </p>
+            </div>
+            <button
+              class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer"
+            >
+              Read More
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="hidden md:flex w-4/12 justify-center items-center">
+            <img
+              src="https://html.awaikenthemes.com/appiest/5-photo-editing-app-template/images/showcase-5.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Our Clients -->
+      <div class="w-full flex justify-center items-center py-16 lg:py-16">
+        <div
+          class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
+          id="testimonial"
+        >
+          <div
+            class="flex flex-col justify-around items-center text-center gap-10"
+          >
+            <!-- our Clients Title -->
+            <div class="flex flex-col gap-2 text-secondary items-center">
+              <span class="font-medium section-title">Our Clients</span>
+              <h2 class="text-4xl font-bold text-balance">
+                Powering at 112,000 companies worldwide
+              </h2>
+            </div>
+
+            <!-- Description -->
+            <div class="flex flex-col gap-7 text-muted text-balance">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer
+              </p>
+            </div>
+
+            <!-- Clients -->
+            <div
+              class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 place-items-center px-4 py-8"
+            >
+              <!-- Client Logo 1 -->
+              <img
+                src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/client-1.png"
+                alt="Client Logo"
+                class="w-full max-w-[180px] object-contain grayscale opacity-80 hover:opacity-100 transition"
+              />
+
+              <!-- Client Logo 2 -->
+              <img
+                src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/client-1.png"
+                alt="Client Logo"
+                class="w-full max-w-[180px] object-contain grayscale opacity-80 hover:opacity-100 transition"
+              />
+
+              <!-- Client Logo 3 -->
+              <img
+                src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/client-1.png"
+                alt="Client Logo"
+                class="w-full max-w-[180px] object-contain grayscale opacity-80 hover:opacity-100 transition"
+              />
+
+              <!-- Client Logo 4 -->
+              <img
+                src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/client-1.png"
+                alt="Client Logo"
+                class="w-full max-w-[180px] object-contain grayscale opacity-80 hover:opacity-100 transition"
+              />
+
+              <!-- Client Logo 5 -->
+              <img
+                src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/client-1.png"
+                alt="Client Logo"
+                class="w-full max-w-[180px] object-contain grayscale opacity-80 hover:opacity-100 transition"
+              />
+
+              <!-- Client Logo 6 -->
+              <img
+                src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/client-1.png"
+                alt="Client Logo"
+                class="w-full max-w-[180px] object-contain grayscale opacity-80 hover:opacity-100 transition"
+              />
+
+              <!-- Client Logo 7 -->
+              <img
+                src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/client-1.png"
+                alt="Client Logo"
+                class="w-full max-w-[180px] object-contain grayscale opacity-80 hover:opacity-100 transition"
+              />
+
+              <!-- Client Logo 8 -->
+              <img
+                src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/client-1.png"
+                alt="Client Logo"
+                class="w-full max-w-[180px] object-contain grayscale opacity-80 hover:opacity-100 transition"
+              />
+            </div>
+
+            <button
+              class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer"
+            >
+              View More Clients
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="w-full flex justify-center items-center py-16 lg:py-16">
+        <div
+          class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
+          id="faq"
+        >
+          <div
+            class="flex flex-col justify-around items-center text-center gap-10"
+          >
+            <!-- FAQ Title -->
+            <div class="flex flex-col gap-2 text-secondary items-center">
+              <span class="font-medium section-title">Any Questions ?</span>
+              <h2 class="text-4xl font-bold text-balance">
+                Frequently asked questions
+              </h2>
+            </div>
+
+            <!-- Description -->
+            <div class="flex flex-col gap-7 text-muted text-balance">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Marquee FAQ -->
+      <div class="marquee-wrapper group bg-background py-8">
+        <div class="marquee-track">
+          <!-- FAQ Item 1 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              How do I accept payments?
+            </h3>
+            <p class="text-sm">
+              Accept payments via credit/debit cards, UPI, and wallets using our
+              integrated checkout system.
+            </p>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              Can I upgrade later?
+            </h3>
+            <p class="text-sm">
+              Yes, you can switch plans anytime from your dashboard under
+              “Billing Settings.”
+            </p>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              Is there a refund policy?
+            </h3>
+            <p class="text-sm">
+              We offer a 14-day no-questions-asked refund policy on all premium
+              subscriptions.
+            </p>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              How secure is the platform?
+            </h3>
+            <p class="text-sm">
+              We use industry-standard encryption (AES-256, HTTPS) to keep your
+              data safe and private.
+            </p>
+          </div>
+
+          <!-- Duplicates for seamless loop -->
+          <!-- FAQ Item 1 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              How do I accept payments?
+            </h3>
+            <p class="text-sm">
+              Accept payments via credit/debit cards, UPI, and wallets using our
+              integrated checkout system.
+            </p>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              Can I upgrade later?
+            </h3>
+            <p class="text-sm">
+              Yes, you can switch plans anytime from your dashboard under
+              “Billing Settings.”
+            </p>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              Is there a refund policy?
+            </h3>
+            <p class="text-sm">
+              We offer a 14-day no-questions-asked refund policy on all premium
+              subscriptions.
+            </p>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              How secure is the platform?
+            </h3>
+            <p class="text-sm">
+              We use industry-standard encryption (AES-256, HTTPS) to keep your
+              data safe and private.
+            </p>
+          </div>
+
+          <!-- Add more duplicates if needed -->
+        </div>
+      </div>
+
+      <!-- Free Trial -->
+      <div class="w-full flex justify-center py-20">
+        <div
+          class="w-11/12 md:w-10/12 max-w-[1110px] flex gap-10 justify-center items-start"
+        >
+          <div
+            class="flex flex-col w-full md:w-6/12 gap-6 justify-center items-start py-20"
+          >
+            <!-- Heading -->
+            <div class="flex flex-col gap-2 items-start">
+              <span class="section-title font-medium">Free Trial</span>
+              <h2
+                class="text-text text-4xl md:text-2xl lg:text-4xl font-bold text-balance"
+              >
+                Get started with our products, for free
+              </h2>
+            </div>
+
+            <!-- Description -->
+            <div
+              class="flex flex-col gap-3 mt-10 items-start justify-center text-wrap text-muted"
+            >
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer
+              </p>
+            </div>
+            <button
+              class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer"
+            >
+              Read More
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="hidden md:flex w-6/12 justify-center items-center">
+            <img
+              src="	https://html.awaikenthemes.com/appiest/7-software-app-template/images/get-started.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Our Team -->
+      <div class="w-full flex justify-center items-center py-16" id="team">
+        <div
+          class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
+          id="about"
+        >
+          <div
+            class="flex flex-col justify-around items-center text-center gap-10"
+          >
+            <!-- Team Title -->
+            <div class="flex flex-col gap-2 text-secondary items-center">
+              <span class="font-medium section-title">Our Team</span>
+              <h2 class="text-4xl font-bold text-balance">
+                We are happy to help
+              </h2>
+
+              <p class="text-muted w-3/4 mt-5">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer
+              </p>
+            </div>
+
+            <!-- Team Members -->
+            <div
+              class="flex flex-col md:flex-row gap-10 text-muted justify-between text-balance mt-10"
+            >
+              <!-- Member -->
+              <div
+                class="flex flex-col justify-center items-center gap-4 group"
+              >
+                <img
+                  src="	https://html.awaikenthemes.com/appiest/7-software-app-template/images/team-1.png"
+                  alt="Team Member"
+                  class="border-b-[1px] border-b-border px-6"
+                />
+
+                <h3 class="text-text text-xl font-bold">Jennifer Ashley</h3>
+
+                <p class="text-sm text-muted -mt-3 font-semibold">
+                  Techninal Support
+                </p>
+
+                <button
+                  class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer"
+                >
+                  Contact Support
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Member -->
+              <div
+                class="flex flex-col justify-center items-center gap-4 group"
+              >
+                <img
+                  src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/team-2.png"
+                  alt="Team Member"
+                  class="border-b-[1px] border-b-border px-6"
+                />
+
+                <h3 class="text-text text-xl font-bold">Jennifer Ashley</h3>
+
+                <p class="text-sm text-muted -mt-3 font-semibold">
+                  Techninal Support
+                </p>
+
+                <button
+                  class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer"
+                >
+                  Contact Support
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Member -->
+              <div
+                class="flex flex-col justify-center items-center gap-4 group"
+              >
+                <img
+                  src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/team-4.png"
+                  alt="Team Member"
+                  class="border-b-[1px] border-b-border px-6"
+                />
+
+                <h3 class="text-text text-xl font-bold">Jennifer Ashley</h3>
+
+                <p class="text-sm text-muted -mt-3 font-semibold">
+                  Techninal Support
+                </p>
+
+                <button
+                  class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer"
+                >
+                  Contact Support
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+
+              <!-- Member -->
+              <div
+                class="flex flex-col justify-center items-center gap-4 group"
+              >
+                <img
+                  src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/team-3.png"
+                  alt="Team Member"
+                  class="border-b-[1px] border-b-border px-6"
+                />
+
+                <h3 class="text-text text-xl font-bold">Jennifer Ashley</h3>
+
+                <p class="text-sm text-muted -mt-3 font-semibold">
+                  Techninal Support
+                </p>
+
+                <button
+                  class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer"
+                >
+                  Contact Support
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing Section -->
+      <div class="w-full flex justify-center items-center py-16" id="pricing">
+        <div
+          class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
+          id="about"
+        >
+          <div
+            class="flex flex-col justify-around items-center text-center gap-10"
+          >
+            <!-- Title -->
+            <div class="flex flex-col gap-2 text-secondary items-center">
+              <span class="font-medium section-title">Affordable Pricing</span>
+              <h2 class="text-4xl font-bold text-balance">
+                Honest pricing, No surprise
+              </h2>
+
+              <p class="text-muted w-3/4 mt-5">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer
+              </p>
+            </div>
+
+            <!-- Pricing Options -->
+            <div
+              class="flex flex-col md:flex-row gap-10 text-muted justify-between text-balance mt-10"
+            >
+              <!-- Option -->
+              <div
+                class="flex flex-col justify-center items-center gap-4 pricing-button border-primary border-[1px] rounded-sm p-8 group transition-all"
+              >
+                <p
+                  class="text-muted text-center font-bold text-3xl group-hover:text-surface"
+                >
+                  1 - 10 User
+                </p>
+                <h4
+                  class="text-text text-center font-bold text-5xl group-hover:text-surface"
+                >
+                  $10.99
+                </h4>
+
+                <p
+                  class="text-muted text-center font-medium -mt-3 group-hover:text-surface"
+                >
+                  per month
+                </p>
+
+                <button
+                  class="w-full text-center text-lg font-semibold py-2.5 cursor-pointer transition-all"
+                >
+                  Start Free Trial
+                </button>
+                <div
+                  class="flex flex-col w-full gap-3 border-[1px] border-primary bg-background p-5 rounded-sm"
+                >
+                  <ul
+                    class="flex flex-col gap-2 plan-list text-sm font-medium text-start text-text"
+                  >
+                    <li>Library of 1000+ styles and effects</li>
+                    <li>HD Processing</li>
+                    <li>No ads</li>
+                    <li>1 GB Free Space</li>
+                    <li>No Watermark</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Option -->
+              <div
+                class="flex flex-col justify-center items-center gap-4 pricing-button border-primary border-[1px] rounded-sm p-8 group transition-all"
+              >
+                <p
+                  class="text-muted text-center font-bold text-3xl group-hover:text-surface"
+                >
+                  11 - 50 User
+                </p>
+                <h4
+                  class="text-text text-center font-bold text-5xl group-hover:text-surface"
+                >
+                  $19.99
+                </h4>
+
+                <p
+                  class="text-muted text-center font-medium -mt-3 group-hover:text-surface"
+                >
+                  per month
+                </p>
+
+                <button
+                  class="w-full text-center text-lg font-semibold py-2.5 cursor-pointer transition-all"
+                >
+                  Start Free Trial
+                </button>
+                <div
+                  class="flex flex-col w-full gap-3 border-[1px] border-primary bg-background p-5 rounded-sm"
+                >
+                  <ul
+                    class="flex flex-col gap-2 plan-list text-sm font-medium text-start text-text"
+                  >
+                    <li>Library of 1000+ styles and effects</li>
+                    <li>HD Processing</li>
+                    <li>No ads</li>
+                    <li>1 GB Free Space</li>
+                    <li>No Watermark</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Option -->
+              <div
+                class="flex flex-col justify-center items-center gap-4 pricing-button border-primary border-[1px] rounded-sm p-8 group transition-all"
+              >
+                <p
+                  class="text-muted text-center font-bold text-3xl group-hover:text-surface"
+                >
+                  More than 50 Users
+                </p>
+                <h4
+                  class="text-text text-center font-bold text-5xl group-hover:text-surface"
+                >
+                  $14.99
+                </h4>
+
+                <p
+                  class="text-muted text-center font-medium -mt-3 group-hover:text-surface"
+                >
+                  per month
+                </p>
+
+                <button
+                  class="w-full text-center text-lg font-semibold py-2.5 cursor-pointer transition-all"
+                >
+                  Start Free Trial
+                </button>
+                <div
+                  class="flex flex-col w-full gap-3 border-[1px] border-primary bg-background p-5 rounded-sm"
+                >
+                  <ul
+                    class="flex flex-col gap-2 plan-list text-sm font-medium text-start text-text"
+                  >
+                    <li>Library of 1000+ styles and effects</li>
+                    <li>HD Processing</li>
+                    <li>No ads</li>
+                    <li>1 GB Free Space</li>
+                    <li>No Watermark</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="flex w-full justify-center py-24 bg-accent">
+        <div
+          class="w-10/12 max-w-[1110px] flex flex-col justify-center items-center gap-1.5"
+        >
+          <!-- Links -->
+          <div
+            class="flex justify-center text-nowrap flex-wrap *:text-muted *:hover:text-text *:not-last:border-r-[1px] *:px-2 *:mb-2 font-medium mt-7"
+          >
+            <a href="#">Privacy Policy</a>
+            <a href="#">License</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#team">Team</a>
+            <a href="#faq">FAQ</a>
+          </div>
+
+          <!-- Social Links -->
+          <div
+            class="flex justify-center text-nowrap flex-wrap items-center *:text-muted font-medium mt-5 gap-2 *:hover:text-primary *:tranistion-all"
+          >
+            <a href="#"><i class="fa-brands fa-facebook-f me-2"></i>Facebook</a>
+            <a href="#"><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
+            <a href="#"><i class="fa-brands fa-x-twitter me-2"></i>Twitter</a>
+            <a href="#"><i class="fa-brands fa-snapchat me-2"></i>Snapchat</a>
+          </div>
+
+          <button
+            class="button-gradient px-3 py-2 text-base font-semibold text-white cursor-pointer my-5"
+          >
+            Contact Support
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <!-- End Line -->
+          <div class="flex flex-col gap-2 text-center text-muted">
+            <p>Lorem Ipsum is simply dummy text of the printing</p>
+            <p>
+              Desiged by
+              <span
+                class="hover:text-primary transition-all underline cursor-pointer"
+                >LifeLinkr</span
+              >
+              with love & Smile
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- <script src="js/jquery.min.js"></script>
+  <script src="js/parallaxie.min.js"></script> -->
+  </body>
+</html>
