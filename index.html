@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./images/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -11,9 +11,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Appiest Template 2</title>
-    <script type="module" crossorigin src="/Appiest-2/assets/index-DPQyXq8x.js"></script>
-    <link rel="stylesheet" crossorigin href="/Appiest-2/assets/index-D4Z3TGH9.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <title>ZapWallet</title>
+    <script type="module" crossorigin src="/assets/index-TJmyUmfh.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CxkoWq2R.css">
   </head>
 
   <body>
@@ -28,9 +33,9 @@
         >
           <img
             id="nav-logo"
-            src="https://html.awaikenthemes.com/appiest/5-photo-editing-app-template/images/logo.png"
+            src="/images/ZapWallet.png"
             alt="Logo"
-            class="transition-all duration-300"
+            class="transition-all duration-300 filter invert brightness-0 saturate-0"
             style="height: 64px"
           />
 
@@ -47,13 +52,13 @@
               <a href="#features" class="link">Features</a>
               <a href="#pricing" class="link">Pricing</a>
               <a href="#testimonial" class="link">Testimonial</a>
-              <a href="#inspirations" class="link">Pages</a>
-              <a href="/" class="link">Login/Signup</a>
-              <!-- <button
+              <a href="#faq" class="link">FAQ</a>
+              <a href="#team" class="link">Team</a>
+              <button
                 class="py-2 px-5 text-secondary bg-background rounded-full cursor-pointer"
               >
                 Download
-              </button> -->
+              </button>
             </div>
           </div>
 
@@ -72,13 +77,13 @@
               <a href="#features" class="link">Features</a>
               <a href="#pricing" class="link">Pricing</a>
               <a href="#testimonial" class="link">Testimonial</a>
-              <a href="#inspirations" class="link">Pages</a>
-              <a href="/" class="link">Login/Signup</a>
-              <!-- <button
+              <a href="#faq" class="link">FAQ</a>
+              <a href="#team" class="link">Team</a>
+              <button
                 class="py-2 px-4 text-secondary bg-background rounded-full cursor-pointer"
               >
                 Download
-              </button> -->
+              </button>
             </div>
           </div>
           <!-- Hamburger (only visible on mobile) -->
@@ -99,7 +104,7 @@
         >
           <!-- Banner -->
           <div
-            class="absolute inset-0 h-[130%] w-full translate-y-[35%] lg:translate-y-[45%] will-change-transform bg-cover bg-center bg-[url('https://html.awaikenthemes.com/appiest/5-photo-editing-app-template/images/header-bg.jpg')]"
+            class="absolute inset-0 h-[130%] w-full translate-y-[40%] lg:translate-y-[55%] will-change-transform bg-cover bg-center bg-[url('/images/banner.png')] brightness-70"
             id="parallax-bg"
           ></div>
 
@@ -108,20 +113,23 @@
 
           <!-- Content -->
           <div
-            class="w-11/12 md:w-full max-w-[1110px] z-10 flex flex-col lg:flex-row justify-center items-center gap-6 pt-32 pb-20 mx-auto text-white my-10"
+            class="w-11/12 md:w-full max-w-[1110px] z-10 flex flex-col lg:flex-row justify-center md:justify-end items-center gap-6 pt-32 pb-20 mx-auto text-white my-10"
           >
-            <div class="flex flex-col gap-10 box-border px-5 pb-5">
-              <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold">
-                Let&apos;s collobrate with team We&apos;ve been expecting you.
+            <div
+              class="flex flex-col gap-10 box-border px-5 pb-5 text-center md:text-end md:w-3/4 items-center md:items-end"
+            >
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold">
+                Fast & Minimal Crypto Wallet
               </h1>
               <p class="font-medium text-balance">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&apos;s standard
-                dummy text ever since the 1500s, when an unknown printer took a
-                galley of type and scrambled.
+                ZapWallet is a lightweight, secure, and easy-to-use crypto
+                wallet built for speed and simplicity.
               </p>
 
-              <form action="" class="flex items-stretch justify-start">
+              <form
+                action=""
+                class="flex items-center justify-center flex-wrap gap-y-5"
+              >
                 <input
                   type="email"
                   placeholder="name@company.com"
@@ -129,7 +137,7 @@
                 />
                 <button
                   type="submit"
-                  class="main-gradient px-3 py-2 font-semibold"
+                  class="main-gradient px-3 py-2 font-semibold cursor-pointer text-nowrap"
                 >
                   Get Started
                 </button>
@@ -140,11 +148,10 @@
               alt=""
               class=""
             /> -->
-            <div
-              class="w-36 h-36 main-gradient p-6 text-white rounded-full flex justify-center items-center text-5xl overflow-clip"
-            >
-              <i class="fa-solid fa-play fa-fw fa-2x"></i>
-            </div>
+            <!-- <div
+            class="w-36 h-36 main-gradient p-6 text-white rounded-full flex justify-center items-center text-5xl overflow-clip">
+            <i class="fa-solid fa-play fa-fw fa-2x"></i>
+          </div> -->
           </div>
         </div>
       </section>
@@ -160,36 +167,31 @@
           >
             <!-- About Title -->
             <div class="flex flex-col gap-2 text-secondary items-center">
-              <span class="font-medium section-title">Short Introduction</span>
-              <h2 class="text-4xl font-bold text-balance">
-                Together let we run project successfully easily
+              <span class="font-medium section-title">About ZapWallet</span>
+              <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
+                What is ZapWallet?
               </h2>
             </div>
 
             <!-- Description -->
             <div class="flex flex-col gap-7 text-muted text-balance">
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
+                ZapWallet is your all-in-one solution for managing digital
+                assets securely and efficiently. Designed with a minimal
+                interface and maximum performance in mind, it empowers users to
+                send, receive, and store cryptocurrency with lightning speed.
               </p>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution.
+                Whether you're a crypto novice or a seasoned trader, ZapWallet
+                delivers unmatched simplicity without compromising on power or
+                security.
               </p>
             </div>
 
-            <button
-              class="button-gradient px-3 py-2 text-lg font-semibold text-white"
-            >
-              Read More
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
+            <!-- <button class="button-gradient px-3 py-2 text-lg font-semibold text-white">
+            Read More
+            <i class="fa-solid fa-arrow-right"></i>
+          </button> -->
 
             <!-- Stats -->
             <!-- <div
@@ -266,12 +268,9 @@
           >
             <!-- Feature Title -->
             <div class="flex flex-col gap-2 text-secondary items-center">
-              <span class="font-medium section-title"
-                >Feature Capabilities</span
-              >
-              <h2 class="text-4xl font-bold text-balance">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority
+              <span class="font-medium section-title">Features</span>
+              <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
+                Features that Make Us Different
               </h2>
             </div>
 
@@ -283,10 +282,10 @@
               <div
                 class="flex flex-col justify-center items-center gap-6 group"
               >
-                <i class="fa-solid fa-chart-column text-5xl icon-gradient"></i>
+                <i class="fa-solid fa-bolt text-5xl icon-gradient"></i>
 
                 <h3 class="text-secondary text-lg font-semibold">
-                  Task Tracking
+                  Speedy Transactions
                 </h3>
 
                 <div class="w-full relative bg-accent h-[1px]">
@@ -296,7 +295,8 @@
                 </div>
 
                 <p class="text-muted text-balance">
-                  There are many variations of pasaes of Lorem Ipsum available
+                  Experience near-instant crypto transfers powered by
+                  cutting-edge blockchain integrations.
                 </p>
               </div>
 
@@ -304,10 +304,10 @@
               <div
                 class="flex flex-col justify-center items-center gap-6 group"
               >
-                <i class="fa-solid fa-chart-column text-5xl icon-gradient"></i>
+                <i class="fa-solid fa-box-archive text-5xl icon-gradient"></i>
 
                 <h3 class="text-secondary text-lg font-semibold">
-                  Task Tracking
+                  Secure Storage
                 </h3>
 
                 <div class="w-full relative bg-accent h-[1px]">
@@ -317,7 +317,8 @@
                 </div>
 
                 <p class="text-muted text-balance">
-                  There are many variations of pasaes of Lorem Ipsum available
+                  Your assets are protected with military-grade encryption,
+                  biometric login, and multi-signature support.
                 </p>
               </div>
 
@@ -325,10 +326,10 @@
               <div
                 class="flex flex-col justify-center items-center gap-6 group"
               >
-                <i class="fa-solid fa-chart-column text-5xl icon-gradient"></i>
+                <i class="fa-solid fa-mobile-android-alt text-5xl icon-gradient"></i>
 
                 <h3 class="text-secondary text-lg font-semibold">
-                  Task Tracking
+                  Minimalist Interface
                 </h3>
 
                 <div class="w-full relative bg-accent h-[1px]">
@@ -338,7 +339,8 @@
                 </div>
 
                 <p class="text-muted text-balance">
-                  There are many variations of pasaes of Lorem Ipsum available
+                  A clean, distraction-free design that keeps focus on what
+                  matters — your assets.
                 </p>
               </div>
 
@@ -346,10 +348,10 @@
               <div
                 class="flex flex-col justify-center items-center gap-6 group"
               >
-                <i class="fa-solid fa-chart-column text-5xl icon-gradient"></i>
+                <i class="fa-solid fa-bitcoin-sign text-5xl icon-gradient"></i>
 
                 <h3 class="text-secondary text-lg font-semibold">
-                  Task Tracking
+                  Multi-Coin Support
                 </h3>
 
                 <div class="w-full relative bg-accent h-[1px]">
@@ -359,7 +361,8 @@
                 </div>
 
                 <p class="text-muted text-balance">
-                  There are many variations of pasaes of Lorem Ipsum available
+                  Store, swap, and manage a wide range of cryptocurrencies from
+                  one simple dashboard.
                 </p>
               </div>
             </div>
@@ -370,121 +373,121 @@
             >
               <!-- Item 1 -->
               <div class="flex items-start gap-2">
-                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
                   <i class="fa-solid fa-check fa-sm fa-fw"></i>
                 </div>
                 <span class="text-muted text-sm font-medium text-start"
-                  >Track Your Performance</span
+                  >Real-time Alerts</span
                 >
               </div>
 
               <!-- Item 2 -->
               <div class="flex items-start gap-2">
-                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
                   <i class="fa-solid fa-check fa-sm fa-fw"></i>
                 </div>
                 <span class="text-muted text-sm font-medium text-start"
-                  >Save drafts</span
+                  >Cross-Platform Sync</span
                 >
               </div>
 
               <!-- Item 3 -->
               <div class="flex items-start gap-2">
-                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
                   <i class="fa-solid fa-check fa-sm fa-fw"></i>
                 </div>
                 <span class="text-muted text-sm font-medium text-start"
-                  >Send automatic Reminders</span
+                  >Instant Transactions</span
                 >
               </div>
 
               <!-- Item 4 -->
               <div class="flex items-start gap-2">
-                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
                   <i class="fa-solid fa-check fa-sm fa-fw"></i>
                 </div>
                 <span class="text-muted text-sm font-medium text-start"
-                  >Send Invoice</span
+                  >Military-Grade Security</span
                 >
               </div>
 
               <!-- Item 5 -->
               <div class="flex items-start gap-2">
-                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
                   <i class="fa-solid fa-check fa-sm fa-fw"></i>
                 </div>
                 <span class="text-muted text-sm font-medium text-start"
-                  >Preview Before Launching</span
+                  >Smart & Predictive UI</span
                 >
               </div>
 
               <!-- Item 6 -->
               <div class="flex items-start gap-2">
-                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
                   <i class="fa-solid fa-check fa-sm fa-fw"></i>
                 </div>
                 <span class="text-muted text-sm font-medium text-start"
-                  >Manage Clients</span
+                  >Non-Custodial Wallet</span
                 >
               </div>
 
               <!-- Item 7 -->
               <div class="flex items-start gap-2">
-                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
                   <i class="fa-solid fa-check fa-sm fa-fw"></i>
                 </div>
                 <span class="text-muted text-sm font-medium text-start"
-                  >Track Performance</span
+                  >Real-Time Alerts</span
                 >
               </div>
 
               <!-- Item 8 -->
               <div class="flex items-start gap-2">
-                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
                   <i class="fa-solid fa-check fa-sm fa-fw"></i>
                 </div>
                 <span class="text-muted text-sm font-medium text-start"
-                  >Instant status updates</span
+                  >Built-in Swap Engine</span
                 >
               </div>
 
               <!-- Item 9 -->
               <div class="flex items-start gap-2">
-                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
                   <i class="fa-solid fa-check fa-sm fa-fw"></i>
                 </div>
                 <span class="text-muted text-sm font-medium text-start"
-                  >Send automatic Reminders</span
+                  >Custom Gas Controls</span
                 >
               </div>
 
               <!-- Item 10 -->
               <div class="flex items-start gap-2">
-                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
                   <i class="fa-solid fa-check fa-sm fa-fw"></i>
                 </div>
                 <span class="text-muted text-sm font-medium text-start"
-                  >Send Invoice</span
+                  >One-Tap QR Payments</span
                 >
               </div>
 
               <!-- Item 11 -->
               <div class="flex items-start gap-2">
-                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
                   <i class="fa-solid fa-check fa-sm fa-fw"></i>
                 </div>
                 <span class="text-muted text-sm font-medium text-start"
-                  >Multi-currency Dashboard</span
+                  >dApp Browser Integration</span
                 >
               </div>
 
               <!-- Item 12 -->
               <div class="flex items-start gap-2">
-                <div class="bg-primary-2 text-primary rounded p-1 mt-1">
+                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
                   <i class="fa-solid fa-check fa-sm fa-fw"></i>
                 </div>
                 <span class="text-muted text-sm font-medium text-start"
-                  >Summary and History</span
+                  >24/7 Human Support</span
                 >
               </div>
             </div>
@@ -493,50 +496,39 @@
       </div>
 
       <!-- Inspirations -->
-      <div class="w-full flex justify-center bg-surface" id="inspirations">
-        <div
-          class="w-11/12 md:w-10/12 max-w-[1110px] flex gap-10 justify-center items-start"
-        >
-          <div
-            class="flex flex-col w-full md:w-8/12 gap-4 justify-center items-start py-20"
-          >
-            <!-- Heading -->
-            <div class="flex flex-col gap-2 items-start">
-              <span class="section-title font-medium">Inspirations</span>
-              <h2 class="text-text text-4xl md:text-2xl lg:text-3xl font-bold">
-                World best team run on appiest and they loved our product
-              </h2>
-            </div>
+      <!-- <div class="w-full flex justify-center bg-surface">
+      <div class="w-11/12 md:w-10/12 max-w-[1110px] flex gap-10 justify-center items-start">
+        <div class="flex flex-col w-full md:w-8/12 gap-4 justify-center items-start py-20"> -->
+      <!-- Heading -->
+      <!-- <div class="flex flex-col gap-2 items-start">
+            <span class="section-title font-medium">Inspirations</span>
+            <h2 class="text-text text-4xl md:text-2xl lg:text-3xl font-bold">
+              World best team run on appiest and they loved our product
+            </h2>
+          </div> -->
 
-            <!-- Description -->
-            <div
-              class="flex flex-col gap-3 mt-10 items-start justify-center text-wrap text-muted"
-            >
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English. Many
-                desktop publishing packages and web page editors now use Lorem
-                Ipsum as their default model text,
-              </p>
-            </div>
-            <button
-              class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer"
-            >
-              Read More
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
+      <!-- Description -->
+      <!-- <div class="flex flex-col gap-3 mt-10 items-start justify-center text-wrap text-muted">
+            <p>
+              It is a long established fact that a reader will be distracted
+              by the readable content of a page when looking at its layout.
+              The point of using Lorem Ipsum is that it has a more-or-less
+              normal distribution of letters, as opposed to using 'Content
+              here, content here', making it look like readable English. Many
+              desktop publishing packages and web page editors now use Lorem
+              Ipsum as their default model text,
+            </p>
           </div>
-          <div class="hidden md:flex w-4/12 justify-center items-center">
-            <img
-              src="https://html.awaikenthemes.com/appiest/5-photo-editing-app-template/images/showcase-5.png"
-              alt=""
-            />
-          </div>
+          <button class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer">
+            Read More
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="hidden md:flex w-4/12 justify-center items-center">
+          <img src="https://html.awaikenthemes.com/appiest/5-photo-editing-app-template/images/showcase-5.png" alt="" />
         </div>
       </div>
+    </div> -->
 
       <!-- Our Clients -->
       <div class="w-full flex justify-center items-center py-16 lg:py-16">
@@ -550,87 +542,77 @@
             <!-- our Clients Title -->
             <div class="flex flex-col gap-2 text-secondary items-center">
               <span class="font-medium section-title">Our Clients</span>
-              <h2 class="text-4xl font-bold text-balance">
-                Powering at 112,000 companies worldwide
+              <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
+                Trusted by Top Brands
               </h2>
             </div>
 
             <!-- Description -->
-            <div class="flex flex-col gap-7 text-muted text-balance">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer
-              </p>
+            <div class="flex flex-col gap-7 text-muted text-balance italic">
+              <p>“Backed by institutions. Built for everyone.”</p>
             </div>
 
             <!-- Clients -->
             <div
-              class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 place-items-center px-4 py-8"
+              class="grid grid-cols-2 sm:grid-cols-3 gap-6 place-items-center px-4 py-8"
             >
               <!-- Client Logo 1 -->
               <img
-                src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/client-1.png"
+                src="/images/binance.PNG"
                 alt="Client Logo"
-                class="w-full max-w-[180px] object-contain grayscale opacity-80 hover:opacity-100 transition"
+                class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition"
               />
 
               <!-- Client Logo 2 -->
               <img
-                src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/client-1.png"
+                src="/images/coinbase.PNG"
                 alt="Client Logo"
-                class="w-full max-w-[180px] object-contain grayscale opacity-80 hover:opacity-100 transition"
+                class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition"
               />
 
               <!-- Client Logo 3 -->
               <img
-                src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/client-1.png"
+                src="/images/kraken.PNG"
                 alt="Client Logo"
-                class="w-full max-w-[180px] object-contain grayscale opacity-80 hover:opacity-100 transition"
+                class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition"
               />
 
               <!-- Client Logo 4 -->
               <img
-                src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/client-1.png"
+                src="/images/openai.png"
                 alt="Client Logo"
-                class="w-full max-w-[180px] object-contain grayscale opacity-80 hover:opacity-100 transition"
+                class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition"
               />
 
               <!-- Client Logo 5 -->
               <img
-                src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/client-1.png"
+                src="/images/polygon.PNG"
                 alt="Client Logo"
-                class="w-full max-w-[180px] object-contain grayscale opacity-80 hover:opacity-100 transition"
+                class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition"
               />
 
               <!-- Client Logo 6 -->
               <img
-                src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/client-1.png"
+                src="/images/solana.PNG"
                 alt="Client Logo"
-                class="w-full max-w-[180px] object-contain grayscale opacity-80 hover:opacity-100 transition"
+                class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition"
               />
 
               <!-- Client Logo 7 -->
-              <img
-                src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/client-1.png"
-                alt="Client Logo"
-                class="w-full max-w-[180px] object-contain grayscale opacity-80 hover:opacity-100 transition"
-              />
+              <!-- <img src="/images/coinbase.PNG"
+              alt="Client Logo"
+              class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition" /> -->
 
               <!-- Client Logo 8 -->
-              <img
-                src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/client-1.png"
-                alt="Client Logo"
-                class="w-full max-w-[180px] object-contain grayscale opacity-80 hover:opacity-100 transition"
-              />
+              <!-- <img src="/images/coinbase.PNG"
+              alt="Client Logo"
+              class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition" /> -->
             </div>
 
-            <button
-              class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer"
-            >
-              View More Clients
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
+            <!-- <button class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer">
+            View More Clients
+            <i class="fa-solid fa-arrow-right"></i>
+          </button> -->
           </div>
         </div>
       </div>
@@ -647,19 +629,19 @@
             <!-- FAQ Title -->
             <div class="flex flex-col gap-2 text-secondary items-center">
               <span class="font-medium section-title">Any Questions ?</span>
-              <h2 class="text-4xl font-bold text-balance">
+              <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
                 Frequently asked questions
               </h2>
             </div>
 
             <!-- Description -->
-            <div class="flex flex-col gap-7 text-muted text-balance">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer
-              </p>
-            </div>
+            <!-- <div class="flex flex-col gap-7 text-muted text-balance">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500s, when an unknown printer
+            </p>
+          </div> -->
           </div>
         </div>
       </div>
@@ -672,11 +654,11 @@
           >
             <div class="h-[1px] bg-muted"></div>
             <h3 class="font-semibold text-secondary mb-2">
-              How do I accept payments?
+              What is ZapWallet?
             </h3>
             <p class="text-sm">
-              Accept payments via credit/debit cards, UPI, and wallets using our
-              integrated checkout system.
+              A minimal, secure, and lightning-fast crypto wallet for everyone —
+              from beginners to experts.
             </p>
           </div>
 
@@ -686,11 +668,11 @@
           >
             <div class="h-[1px] bg-muted"></div>
             <h3 class="font-semibold text-secondary mb-2">
-              Can I upgrade later?
+              Is ZapWallet secure?
             </h3>
             <p class="text-sm">
-              Yes, you can switch plans anytime from your dashboard under
-              “Billing Settings.”
+              Yes, it uses end-to-end encryption, biometric access, and
+              non-custodial storage for full control.
             </p>
           </div>
 
@@ -700,11 +682,10 @@
           >
             <div class="h-[1px] bg-muted"></div>
             <h3 class="font-semibold text-secondary mb-2">
-              Is there a refund policy?
+              Can I use ZapWallet on mobile and desktop?
             </h3>
             <p class="text-sm">
-              We offer a 14-day no-questions-asked refund policy on all premium
-              subscriptions.
+              Absolutely! It's available on iOS, Android, Mac, and Windows.
             </p>
           </div>
 
@@ -714,11 +695,10 @@
           >
             <div class="h-[1px] bg-muted"></div>
             <h3 class="font-semibold text-secondary mb-2">
-              How secure is the platform?
+              How do I get started?
             </h3>
             <p class="text-sm">
-              We use industry-standard encryption (AES-256, HTTPS) to keep your
-              data safe and private.
+              Simply download the app and follow our 2-minute onboarding wizard.
             </p>
           </div>
 
@@ -729,11 +709,11 @@
           >
             <div class="h-[1px] bg-muted"></div>
             <h3 class="font-semibold text-secondary mb-2">
-              How do I accept payments?
+              What is ZapWallet?
             </h3>
             <p class="text-sm">
-              Accept payments via credit/debit cards, UPI, and wallets using our
-              integrated checkout system.
+              A minimal, secure, and lightning-fast crypto wallet for everyone —
+              from beginners to experts.
             </p>
           </div>
 
@@ -743,11 +723,11 @@
           >
             <div class="h-[1px] bg-muted"></div>
             <h3 class="font-semibold text-secondary mb-2">
-              Can I upgrade later?
+              Is ZapWallet secure?
             </h3>
             <p class="text-sm">
-              Yes, you can switch plans anytime from your dashboard under
-              “Billing Settings.”
+              Yes, it uses end-to-end encryption, biometric access, and
+              non-custodial storage for full control.
             </p>
           </div>
 
@@ -757,11 +737,10 @@
           >
             <div class="h-[1px] bg-muted"></div>
             <h3 class="font-semibold text-secondary mb-2">
-              Is there a refund policy?
+              Can I use ZapWallet on mobile and desktop?
             </h3>
             <p class="text-sm">
-              We offer a 14-day no-questions-asked refund policy on all premium
-              subscriptions.
+              Absolutely! It's available on iOS, Android, Mac, and Windows.
             </p>
           </div>
 
@@ -771,39 +750,201 @@
           >
             <div class="h-[1px] bg-muted"></div>
             <h3 class="font-semibold text-secondary mb-2">
-              How secure is the platform?
+              How do I get started?
             </h3>
             <p class="text-sm">
-              We use industry-standard encryption (AES-256, HTTPS) to keep your
-              data safe and private.
+              Simply download the app and follow our 2-minute onboarding wizard.
             </p>
           </div>
 
-          <!-- Add more duplicates if needed -->
+          <!-- Duplicates for seamless loop -->
+          <!-- FAQ Item 1 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              What is ZapWallet?
+            </h3>
+            <p class="text-sm">
+              A minimal, secure, and lightning-fast crypto wallet for everyone —
+              from beginners to experts.
+            </p>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              Is ZapWallet secure?
+            </h3>
+            <p class="text-sm">
+              Yes, it uses end-to-end encryption, biometric access, and
+              non-custodial storage for full control.
+            </p>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              Can I use ZapWallet on mobile and desktop?
+            </h3>
+            <p class="text-sm">
+              Absolutely! It's available on iOS, Android, Mac, and Windows.
+            </p>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              How do I get started?
+            </h3>
+            <p class="text-sm">
+              Simply download the app and follow our 2-minute onboarding wizard.
+            </p>
+          </div>
+          <!-- Duplicates for seamless loop -->
+          <!-- FAQ Item 1 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              What is ZapWallet?
+            </h3>
+            <p class="text-sm">
+              A minimal, secure, and lightning-fast crypto wallet for everyone —
+              from beginners to experts.
+            </p>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              Is ZapWallet secure?
+            </h3>
+            <p class="text-sm">
+              Yes, it uses end-to-end encryption, biometric access, and
+              non-custodial storage for full control.
+            </p>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              Can I use ZapWallet on mobile and desktop?
+            </h3>
+            <p class="text-sm">
+              Absolutely! It's available on iOS, Android, Mac, and Windows.
+            </p>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              How do I get started?
+            </h3>
+            <p class="text-sm">
+              Simply download the app and follow our 2-minute onboarding wizard.
+            </p>
+          </div>
+          <!-- Duplicates for seamless loop -->
+          <!-- FAQ Item 1 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              What is ZapWallet?
+            </h3>
+            <p class="text-sm">
+              A minimal, secure, and lightning-fast crypto wallet for everyone —
+              from beginners to experts.
+            </p>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              Is ZapWallet secure?
+            </h3>
+            <p class="text-sm">
+              Yes, it uses end-to-end encryption, biometric access, and
+              non-custodial storage for full control.
+            </p>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              Can I use ZapWallet on mobile and desktop?
+            </h3>
+            <p class="text-sm">
+              Absolutely! It's available on iOS, Android, Mac, and Windows.
+            </p>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div
+            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
+          >
+            <div class="h-[1px] bg-muted"></div>
+            <h3 class="font-semibold text-secondary mb-2">
+              How do I get started?
+            </h3>
+            <p class="text-sm">
+              Simply download the app and follow our 2-minute onboarding wizard.
+            </p>
+          </div>
         </div>
       </div>
 
       <!-- Free Trial -->
-      <div class="w-full flex justify-center py-20">
+      <div class="w-full flex justify-center py-20 main-gradient">
         <div
-          class="w-11/12 md:w-10/12 max-w-[1110px] flex gap-10 justify-center items-start"
+          class="w-11/12 md:w-10/12 max-w-[1110px] flex gap-10 justify-center items-center"
         >
           <div
             class="flex flex-col w-full md:w-6/12 gap-6 justify-center items-start py-20"
           >
             <!-- Heading -->
             <div class="flex flex-col gap-2 items-start">
-              <span class="section-title font-medium">Free Trial</span>
-              <h2
-                class="text-text text-4xl md:text-2xl lg:text-4xl font-bold text-balance"
+              <span class="section-title font-medium text-text-secondary!"
+                >Free Trial</span
               >
-                Get started with our products, for free
+              <h2
+                class="text-text-secondary text-3xl md:text-4xl lg:text-5xl font-bold text-balance"
+              >
+                Try ZapWallet Free
               </h2>
             </div>
 
             <!-- Description -->
             <div
-              class="flex flex-col gap-3 mt-10 items-start justify-center text-wrap text-muted"
+              class="flex flex-col gap-3 mt-10 items-start justify-center text-wrap text-text-secondary"
             >
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -814,24 +955,25 @@
             <button
               class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer"
             >
-              Read More
+              Start Free Trial
               <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
           <div class="hidden md:flex w-6/12 justify-center items-center">
             <img
-              src="	https://html.awaikenthemes.com/appiest/7-software-app-template/images/get-started.png"
-              alt=""
+              src="/images/logo.png"
+              alt="zapwallet"
+              class="brightness-0 invert filter saturate-0"
             />
           </div>
         </div>
       </div>
 
       <!-- Our Team -->
-      <div class="w-full flex justify-center items-center py-16" id="team">
+      <div class="w-full flex justify-center items-center py-16">
         <div
           class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
-          id="about"
+          id="team"
         >
           <div
             class="flex flex-col justify-around items-center text-center gap-10"
@@ -839,115 +981,129 @@
             <!-- Team Title -->
             <div class="flex flex-col gap-2 text-secondary items-center">
               <span class="font-medium section-title">Our Team</span>
-              <h2 class="text-4xl font-bold text-balance">
-                We are happy to help
+              <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
+                Meet the Team Behind ZapWallet
               </h2>
 
-              <p class="text-muted w-3/4 mt-5">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer
-              </p>
+              <!-- <p class="text-muted w-3/4 mt-5">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500s, when an unknown printer
+            </p> -->
             </div>
 
             <!-- Team Members -->
             <div
-              class="flex flex-col md:flex-row gap-10 text-muted justify-between text-balance mt-10"
+              class="flex flex-col md:flex-row gap-10 text-muted justify-center items-center text-balance mt-10 w-dvw"
             >
-              <!-- Member -->
               <div
-                class="flex flex-col justify-center items-center gap-4 group"
+                class="swiper mySwiper flex justify-center w-3/4 2xl:w-fit"
               >
-                <img
-                  src="	https://html.awaikenthemes.com/appiest/7-software-app-template/images/team-1.png"
-                  alt="Team Member"
-                  class="border-b-[1px] border-b-border px-6"
-                />
+                <div class="swiper-wrapper mb-10">
+                  <div class="swiper-slide" data-swiper-autoplay="2000">
+                    <!-- Member -->
+                    <div
+                      class="flex flex-col justify-center items-center gap-4 group"
+                    >
+                      <img
+                        src="/images/team3.jpg"
+                        alt="Team Member"
+                        class="border-b-[1px] border-b-border px-6"
+                      />
 
-                <h3 class="text-text text-xl font-bold">Jennifer Ashley</h3>
+                      <h3 class="text-text text-xl font-bold">Nathan Carter</h3>
 
-                <p class="text-sm text-muted -mt-3 font-semibold">
-                  Techninal Support
-                </p>
+                      <p class="text-sm text-muted -mt-3 font-semibold">
+                        Founder and CEO
+                      </p>
 
-                <button
-                  class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer"
-                >
-                  Contact Support
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </div>
+                      <button
+                        class="button-gradient px-3 py-2 sm:text-xs md:text-sm lg:text-base font-semibold text-white cursor-pointer"
+                      >
+                        Contact
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" data-swiper-autoplay="2000">
+                    <!-- Member -->
+                    <div
+                      class="flex flex-col justify-center items-center gap-4 group"
+                    >
+                      <img
+                        src="/images/team2.jpg"
+                        alt="Team Member"
+                        class="border-b-[1px] border-b-border px-6"
+                      />
 
-              <!-- Member -->
-              <div
-                class="flex flex-col justify-center items-center gap-4 group"
-              >
-                <img
-                  src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/team-2.png"
-                  alt="Team Member"
-                  class="border-b-[1px] border-b-border px-6"
-                />
+                      <h3 class="text-text text-xl font-bold">Emily Brooks</h3>
 
-                <h3 class="text-text text-xl font-bold">Jennifer Ashley</h3>
+                      <p class="text-sm text-muted -mt-3 font-semibold">
+                        Lead Blockchain Developer
+                      </p>
 
-                <p class="text-sm text-muted -mt-3 font-semibold">
-                  Techninal Support
-                </p>
+                      <button
+                        class="button-gradient px-3 py-2 sm:text-xs md:text-sm lg:text-base font-semibold text-white cursor-pointer"
+                      >
+                        Contact
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" data-swiper-autoplay="2000">
+                    <!-- Member -->
+                    <div
+                      class="flex flex-col justify-center items-center gap-4 group"
+                    >
+                      <img
+                        src="/images/team4.jpg"
+                        alt="Team Member"
+                        class="border-b-[1px] border-b-border px-6"
+                      />
 
-                <button
-                  class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer"
-                >
-                  Contact Support
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </div>
+                      <h3 class="text-text text-xl font-bold">
+                        Olivia Bennett
+                      </h3>
 
-              <!-- Member -->
-              <div
-                class="flex flex-col justify-center items-center gap-4 group"
-              >
-                <img
-                  src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/team-4.png"
-                  alt="Team Member"
-                  class="border-b-[1px] border-b-border px-6"
-                />
+                      <p class="text-sm text-muted -mt-3 font-semibold">
+                        Product Design Head
+                      </p>
 
-                <h3 class="text-text text-xl font-bold">Jennifer Ashley</h3>
+                      <button
+                        class="button-gradient px-3 py-2 sm:text-xs md:text-sm lg:text-base font-semibold text-white cursor-pointer"
+                      >
+                        Contact
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" data-swiper-autoplay="2000">
+                    <!-- Member -->
+                    <div
+                      class="flex flex-col justify-center items-center gap-4 group"
+                    >
+                      <img
+                        src="/images/team1.jpg"
+                        alt="Team Member"
+                        class="border-b-[1px] border-b-border px-6"
+                      />
 
-                <p class="text-sm text-muted -mt-3 font-semibold">
-                  Techninal Support
-                </p>
+                      <h3 class="text-text text-xl font-bold">Daniel Reed</h3>
 
-                <button
-                  class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer"
-                >
-                  Contact Support
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </div>
+                      <p class="text-sm text-muted -mt-3 font-semibold">
+                        Security officer
+                      </p>
 
-              <!-- Member -->
-              <div
-                class="flex flex-col justify-center items-center gap-4 group"
-              >
-                <img
-                  src="https://html.awaikenthemes.com/appiest/7-software-app-template/images/team-3.png"
-                  alt="Team Member"
-                  class="border-b-[1px] border-b-border px-6"
-                />
-
-                <h3 class="text-text text-xl font-bold">Jennifer Ashley</h3>
-
-                <p class="text-sm text-muted -mt-3 font-semibold">
-                  Techninal Support
-                </p>
-
-                <button
-                  class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer"
-                >
-                  Contact Support
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
+                      <button
+                        class="button-gradient px-3 py-2 sm:text-xs md:text-sm lg:text-base font-semibold text-white cursor-pointer"
+                      >
+                        Contact
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
           </div>
@@ -955,10 +1111,10 @@
       </div>
 
       <!-- Pricing Section -->
-      <div class="w-full flex justify-center items-center py-16" id="pricing">
+      <div class="w-full flex justify-center items-center py-16">
         <div
           class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
-          id="about"
+          id="pricing"
         >
           <div
             class="flex flex-col justify-around items-center text-center gap-10"
@@ -966,29 +1122,70 @@
             <!-- Title -->
             <div class="flex flex-col gap-2 text-secondary items-center">
               <span class="font-medium section-title">Affordable Pricing</span>
-              <h2 class="text-4xl font-bold text-balance">
-                Honest pricing, No surprise
+              <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
+                Flexible & Transparent Pricing
               </h2>
 
-              <p class="text-muted w-3/4 mt-5">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer
-              </p>
+              <!-- <p class="text-muted w-3/4 mt-5">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500s, when an unknown printer
+            </p> -->
             </div>
 
             <!-- Pricing Options -->
             <div
-              class="flex flex-col md:flex-row gap-10 text-muted justify-between text-balance mt-10"
+              class="flex flex-col lg:flex-row gap-10 text-muted justify-between text-balance mt-10"
             >
               <!-- Option -->
               <div
                 class="flex flex-col justify-center items-center gap-4 pricing-button border-primary border-[1px] rounded-sm p-8 group transition-all"
               >
                 <p
+                  class="text-muted text-center font-bold text-3xl group-hover:text-surface "
+                >
+                  Free Plan
+                </p>
+                <h4
+                  class="text-text text-center font-bold text-5xl group-hover:text-surface"
+                >
+                  $0.00
+                </h4>
+
+                <p
+                  class="text-muted text-center font-medium -mt-3 group-hover:text-surface"
+                >
+                  per month
+                </p>
+
+                <button
+                  class="w-full text-center text-lg font-semibold py-2.5 cursor-pointer transition-all"
+                >
+                  Start Free Trial
+                </button>
+                <div
+                  class="flex flex-col w-full gap-3 border-[1px] border-primary bg-background p-5 rounded-sm"
+                >
+                  <ul
+                    class="flex flex-col gap-2 plan-list text-sm font-medium text-start text-text"
+                  >
+                    <li>Up to 5 popular coins</li>
+                    <li>1 Device sync only</li>
+                    <li>Standard encryption</li>
+                    <li>Swap Engine Access Not available</li>
+                    <li>Email-only (48h response)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Option -->
+              <div
+                class="flex flex-col justify-start items-center gap-4 pricing-button border-primary border-[1px] rounded-sm p-8 group transition-all"
+              >
+                <p
                   class="text-muted text-center font-bold text-3xl group-hover:text-surface"
                 >
-                  1 - 10 User
+                  Premium Plan
                 </p>
                 <h4
                   class="text-text text-center font-bold text-5xl group-hover:text-surface"
@@ -1013,11 +1210,11 @@
                   <ul
                     class="flex flex-col gap-2 plan-list text-sm font-medium text-start text-text"
                   >
-                    <li>Library of 1000+ styles and effects</li>
-                    <li>HD Processing</li>
-                    <li>No ads</li>
-                    <li>1 GB Free Space</li>
-                    <li>No Watermark</li>
+                    <li>100+ coins & tokens</li>
+                    <li>Up to 3 Devices</li>
+                    <li>Encrypted storage + Biometric Lock</li>
+                    <li>Basic token swaps</li>
+                    <li>Priority Email + Chat</li>
                   </ul>
                 </div>
               </div>
@@ -1029,48 +1226,7 @@
                 <p
                   class="text-muted text-center font-bold text-3xl group-hover:text-surface"
                 >
-                  11 - 50 User
-                </p>
-                <h4
-                  class="text-text text-center font-bold text-5xl group-hover:text-surface"
-                >
-                  $19.99
-                </h4>
-
-                <p
-                  class="text-muted text-center font-medium -mt-3 group-hover:text-surface"
-                >
-                  per month
-                </p>
-
-                <button
-                  class="w-full text-center text-lg font-semibold py-2.5 cursor-pointer transition-all"
-                >
-                  Start Free Trial
-                </button>
-                <div
-                  class="flex flex-col w-full gap-3 border-[1px] border-primary bg-background p-5 rounded-sm"
-                >
-                  <ul
-                    class="flex flex-col gap-2 plan-list text-sm font-medium text-start text-text"
-                  >
-                    <li>Library of 1000+ styles and effects</li>
-                    <li>HD Processing</li>
-                    <li>No ads</li>
-                    <li>1 GB Free Space</li>
-                    <li>No Watermark</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Option -->
-              <div
-                class="flex flex-col justify-center items-center gap-4 pricing-button border-primary border-[1px] rounded-sm p-8 group transition-all"
-              >
-                <p
-                  class="text-muted text-center font-bold text-3xl group-hover:text-surface"
-                >
-                  More than 50 Users
+                  Pro Plan
                 </p>
                 <h4
                   class="text-text text-center font-bold text-5xl group-hover:text-surface"
@@ -1087,7 +1243,7 @@
                 <button
                   class="w-full text-center text-lg font-semibold py-2.5 cursor-pointer transition-all"
                 >
-                  Start Free Trial
+                  Start Pro Plan
                 </button>
                 <div
                   class="flex flex-col w-full gap-3 border-[1px] border-primary bg-background p-5 rounded-sm"
@@ -1095,11 +1251,11 @@
                   <ul
                     class="flex flex-col gap-2 plan-list text-sm font-medium text-start text-text"
                   >
-                    <li>Library of 1000+ styles and effects</li>
-                    <li>HD Processing</li>
-                    <li>No ads</li>
-                    <li>1 GB Free Space</li>
-                    <li>No Watermark</li>
+                    <li>Unlimited multi-chain coin support</li>
+                    <li>Unlimited Devices (Mobile + Desktop + Web)</li>
+                    <li>Cold wallet integration + Multi-signature vaults</li>
+                    <li>Advanced swap with fee customization</li>
+                    <li>24/7 Dedicated Support & Account Manager</li>
                   </ul>
                 </div>
               </div>
@@ -1120,8 +1276,8 @@
             <a href="#">Privacy Policy</a>
             <a href="#">License</a>
             <a href="#">Terms & Conditions</a>
-            <a href="#team">Team</a>
-            <a href="#faq">FAQ</a>
+            <a href="#">Team</a>
+            <a href="#">Career</a>
           </div>
 
           <!-- Social Links -->
@@ -1135,9 +1291,9 @@
           </div>
 
           <button
-            class="button-gradient px-3 py-2 text-base font-semibold text-white cursor-pointer my-5"
+            class="button-gradient px-3 py-2 sm:text-xs md:text-sm lg:text-base font-semibold text-white cursor-pointer my-5"
           >
-            Contact Support
+            Let's Connect
             <i class="fa-solid fa-arrow-right"></i>
           </button>
           <!-- End Line -->
@@ -1155,6 +1311,30 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        slidesPerView: 1,
+        breakpoints: {
+          // when window width is >= 320px
+          640: {
+            slidesPerView: 2,
+          },
+          1028: {
+            slidesPerView: 3,
+          },
+          1530: {
+            slidesPerView: 4,
+          },
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        freemode: true,
+      });
+    </script>
     <!-- <script src="js/jquery.min.js"></script>
   <script src="js/parallaxie.min.js"></script> -->
   </body>
