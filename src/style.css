@@ -1,4 +1,5 @@
 @import "tailwindcss";
+/* @tailwind utilities; */
 
 @theme {
   --color-primary: #7f5efd;
@@ -127,7 +128,7 @@ html {
 
 .section-title {
   color: var(--color-muted);
-  @apply text-xs lg:text-sm;
+  @apply text-xs md:text-sm lg:text-base;
 }
 
 /* Pricing Section */
@@ -143,6 +144,11 @@ html {
   content: "\f058";
   color: var(--color-primary);
   @apply font-black me-2.5 antialiased;
+}
+
+.pricing-button:hover>h4,
+.pricing-button:hover>h4 {
+  color: var(--color-surface);
 }
 
 
@@ -167,4 +173,58 @@ html {
 .link:hover::after {
   left: 0;
   width: 100%;
+}
+
+
+/* .swiper {
+  width: 48%;
+  height: 100%;
+}
+
+.swiper-slide{
+  width: 100%;
+  height: 100%;
+  max-width: 350px;
+  max-height: 700px;
+} */
+
+
+.swiper {
+  /* width: 23%; */
+  /* width: 90%; */
+  height: 100%;
+}
+
+/* @media (width >=768px
+) {
+  .swiper {
+    width: 48%;
+  }
+}
+
+@media (width >=1024px
+) {
+  .swiper {
+    width: 75%;
+  }
+}
+
+@media (width >=1530px) {
+  .swiper {
+    width: 100%;
+  }
+} */
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  max-width: 350px;
+  max-height: 700px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
