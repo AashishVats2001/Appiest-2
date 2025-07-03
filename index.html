@@ -1,200 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Appiest-2/images/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
 
-    <title>ZapWallet</title>
-    <script type="module" crossorigin src="/Appiest-2/assets/index-CSXaA1EX.js"></script>
-    <link rel="stylesheet" crossorigin href="/Appiest-2/assets/index-Bdzgo2hH.css">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/Appiest-2/images/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-  <body>
-    <div class="flex flex-col items-center">
-      <!-- Nav -->
-      <nav
-        id="navbar"
-        class="w-full flex justify-center items-center z-50 fixed border-b-[1px] border-b-[#9e9e9e] text-white"
-      >
-        <div
-          class="w-10/12 max-w-[1110px] flex justify-between items-center gap-2 py-4"
-        >
-          <img
-            id="nav-logo"
-            src="/Appiest-2/images/ZapWallet.png"
-            alt="Logo"
-            class="transition-all duration-300 filter invert brightness-0 saturate-0"
-            style="height: 64px"
-          />
+  <title>ZapWallet</title>
+  <script type="module" crossorigin src="/Appiest-2/assets/index-CxLnpj5n.js"></script>
+  <link rel="stylesheet" crossorigin href="/Appiest-2/assets/index-CoC6rcuX.css">
+</head>
 
-          <!-- Links -->
-          <!-- Desktop Nav -->
-          <div
-            class="gap-4 text-sm uppercase font-medium justify-center items-center max-lg:hidden"
-          >
-            <div
-              class="w-10/12 flex gap-y-4 gap-x-5 pb-0 items-center flex-row justify-between *:transition-all"
-            >
-              <a href="#home" class="link">Home</a>
-              <a href="#about" class="link">About</a>
-              <a href="#features" class="link">Features</a>
-              <a href="#pricing" class="link">Pricing</a>
-              <a href="#testimonial" class="link">Testimonial</a>
-              <a href="#faq" class="link">FAQ</a>
-              <a href="#team" class="link">Team</a>
-              <button
-                class="py-2 px-5 text-secondary bg-background rounded-full cursor-pointer"
-              >
-                Download
-              </button>
-            </div>
+<body>
+  <div class="flex flex-col items-center">
+    <!-- Nav -->
+    <nav id="navbar"
+      class="w-full flex justify-center items-center z-50 fixed border-b-[1px] border-b-[#9e9e9e] text-white">
+      <div class="w-10/12 max-w-[1110px] flex justify-between items-center gap-2 py-4">
+        <img id="nav-logo" src="/Appiest-2/images/ZapWallet.png" alt="Logo"
+          class="transition-all duration-300 filter invert brightness-0 saturate-0" style="height: 64px" />
+
+        <!-- Links -->
+        <!-- Desktop Nav -->
+        <div class="gap-4 text-sm uppercase font-medium justify-center items-center max-lg:hidden">
+          <div class="w-10/12 flex gap-y-4 gap-x-5 pb-0 items-center flex-row justify-between *:transition-all">
+            <a href="#home" class="link">Home</a>
+            <a href="#about" class="link">About</a>
+            <a href="#features" class="link">Features</a>
+            <a href="#pricing" class="link">Pricing</a>
+            <a href="#testimonial" class="link">Testimonial</a>
+            <a href="#faq" class="link">FAQ</a>
+            <a href="#team" class="link">Team</a>
+            <button class="py-2 px-5 text-secondary bg-background rounded-full cursor-pointer">
+              Download
+            </button>
           </div>
-
-          <!-- Mobile Nav -->
-
-          <div
-            id="nav-links"
-            class="absolute top-full left-0 right-0 overflow-hidden z-20 w-full lg:hidden gap-4 text-sm uppercase font-medium justify-center items-center main-gradient transition-all duration-500 ease-in-out"
-            style="max-height: 0px"
-          >
-            <div
-              class="w-10/12 mx-auto flex gap-y-4 gap-x-4 pb-4 lg:pb-0 items-start flex-col justify-between *:transition-all"
-            >
-              <a href="#home" class="link">Home</a>
-              <a href="#about" class="link">About</a>
-              <a href="#features" class="link">Features</a>
-              <a href="#pricing" class="link">Pricing</a>
-              <a href="#testimonial" class="link">Testimonial</a>
-              <a href="#faq" class="link">FAQ</a>
-              <a href="#team" class="link">Team</a>
-              <button
-                class="py-2 px-4 text-secondary bg-background rounded-full cursor-pointer"
-              >
-                Download
-              </button>
-            </div>
-          </div>
-          <!-- Hamburger (only visible on mobile) -->
-          <button id="menu-toggle" class="lg:hidden text-3xl text-white">
-            <i class="fa-solid fa-bars"></i>
-          </button>
         </div>
-      </nav>
 
-      <!-- Hero  -->
-      <section
-        class="w-full flex justify-center main-gradient relative"
-        id="home"
-      >
+        <!-- Mobile Nav -->
+
+        <div id="nav-links"
+          class="absolute top-full left-0 right-0 overflow-hidden z-20 w-full lg:hidden gap-4 text-sm uppercase font-medium justify-center items-center main-gradient transition-all duration-500 ease-in-out"
+          style="max-height: 0px">
+          <div
+            class="w-10/12 mx-auto flex gap-y-4 gap-x-4 pb-4 lg:pb-0 items-start flex-col justify-between *:transition-all">
+            <a href="#home" class="link">Home</a>
+            <a href="#about" class="link">About</a>
+            <a href="#features" class="link">Features</a>
+            <a href="#pricing" class="link">Pricing</a>
+            <a href="#testimonial" class="link">Testimonial</a>
+            <a href="#faq" class="link">FAQ</a>
+            <a href="#team" class="link">Team</a>
+            <button class="py-2 px-4 text-secondary bg-background rounded-full cursor-pointer">
+              Download
+            </button>
+          </div>
+        </div>
+        <!-- Hamburger (only visible on mobile) -->
+        <button id="menu-toggle" class="lg:hidden text-3xl text-white">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero  -->
+    <section class="w-full flex justify-center main-gradient relative" id="home">
+      <div id="parallax-section" class="w-full flex justify-center items-center relative overflow-hidden rounded-lg">
+        <!-- Banner -->
         <div
-          id="parallax-section"
-          class="w-full flex justify-center items-center relative overflow-hidden rounded-lg"
-        >
-          <!-- Banner -->
+          class="absolute inset-0 h-[130%] w-full translate-y-[40%] lg:translate-y-[55%] will-change-transform bg-cover bg-center bg-[url('/images/banner.png')] brightness-70"
+          id="parallax-bg"></div>
+
+        <!-- Overlay to darken background -->
+        <div class="absolute inset-0 bg-black/20 z-[1]"></div>
+
+        <!-- Content -->
+        <div
+          class="w-11/12 md:w-full max-w-[1110px] z-10 flex flex-col lg:flex-row justify-center md:justify-end items-center gap-6 pt-32 pb-20 mx-auto text-white my-10">
           <div
-            class="absolute inset-0 h-[130%] w-full translate-y-[40%] lg:translate-y-[55%] will-change-transform bg-cover bg-center bg-[url('/images/banner.png')] brightness-70"
-            id="parallax-bg"
-          ></div>
+            class="flex flex-col gap-10 box-border px-5 pb-5 text-center md:text-end md:w-3/4 items-center md:items-end">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold">
+              Fast & Minimal Crypto Wallet
+            </h1>
+            <p class="font-medium text-balance">
+              ZapWallet is a lightweight, secure, and easy-to-use crypto
+              wallet built for speed and simplicity.
+            </p>
 
-          <!-- Overlay to darken background -->
-          <div class="absolute inset-0 bg-black/20 z-[1]"></div>
-
-          <!-- Content -->
-          <div
-            class="w-11/12 md:w-full max-w-[1110px] z-10 flex flex-col lg:flex-row justify-center md:justify-end items-center gap-6 pt-32 pb-20 mx-auto text-white my-10"
-          >
-            <div
-              class="flex flex-col gap-10 box-border px-5 pb-5 text-center md:text-end md:w-3/4 items-center md:items-end"
-            >
-              <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold">
-                Fast & Minimal Crypto Wallet
-              </h1>
-              <p class="font-medium text-balance">
-                ZapWallet is a lightweight, secure, and easy-to-use crypto
-                wallet built for speed and simplicity.
-              </p>
-
-              <form
-                action=""
-                class="flex items-center justify-center flex-wrap gap-y-5"
-              >
-                <input
-                  type="email"
-                  placeholder="name@company.com"
-                  class="bg-white placeholder:text-muted text-lg px-3 py-2 me-2"
-                />
-                <button
-                  type="submit"
-                  class="main-gradient px-3 py-2 font-semibold cursor-pointer text-nowrap"
-                >
-                  Get Started
-                </button>
-              </form>
-            </div>
-            <!-- <img
+            <form action="" class="flex items-center justify-center flex-wrap gap-y-5">
+              <input type="email" placeholder="name@company.com"
+                class="bg-white placeholder:text-muted text-lg px-3 py-2 me-2" />
+              <button type="submit" class="main-gradient px-3 py-2 font-semibold cursor-pointer text-nowrap">
+                Get Started
+              </button>
+            </form>
+          </div>
+          <!-- <img
               src="https://html.awaikenthemes.com/appiest/5-photo-editing-app-template/images/header.png"
               alt=""
               class=""
             /> -->
-            <!-- <div
+          <!-- <div
             class="w-36 h-36 main-gradient p-6 text-white rounded-full flex justify-center items-center text-5xl overflow-clip">
             <i class="fa-solid fa-play fa-fw fa-2x"></i>
           </div> -->
-          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- About -->
-      <div class="w-full flex justify-center items-center py-16 lg:py-16">
-        <div
-          class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
-          id="about"
-        >
-          <div
-            class="flex flex-col justify-around items-center text-center gap-10"
-          >
-            <!-- About Title -->
-            <div class="flex flex-col gap-2 text-secondary items-center">
-              <span class="font-medium section-title">About ZapWallet</span>
-              <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
-                What is ZapWallet?
-              </h2>
-            </div>
+    <!-- About -->
+    <div class="w-full flex justify-center items-center py-16 lg:py-16">
+      <div
+        class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
+        id="about">
+        <div class="flex flex-col justify-around items-center text-center gap-10">
+          <!-- About Title -->
+          <div class="flex flex-col gap-2 text-secondary items-center">
+            <span class="font-medium section-title">About ZapWallet</span>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
+              What is ZapWallet?
+            </h2>
+          </div>
 
-            <!-- Description -->
-            <div class="flex flex-col gap-7 text-muted text-balance">
-              <p>
-                ZapWallet is your all-in-one solution for managing digital
-                assets securely and efficiently. Designed with a minimal
-                interface and maximum performance in mind, it empowers users to
-                send, receive, and store cryptocurrency with lightning speed.
-              </p>
-              <p>
-                Whether you're a crypto novice or a seasoned trader, ZapWallet
-                delivers unmatched simplicity without compromising on power or
-                security.
-              </p>
-            </div>
+          <!-- Description -->
+          <div class="flex flex-col gap-7 text-muted text-balance">
+            <p>
+              ZapWallet is your all-in-one solution for managing digital
+              assets securely and efficiently. Designed with a minimal
+              interface and maximum performance in mind, it empowers users to
+              send, receive, and store cryptocurrency with lightning speed.
+            </p>
+            <p>
+              Whether you're a crypto novice or a seasoned trader, ZapWallet
+              delivers unmatched simplicity without compromising on power or
+              security.
+            </p>
+          </div>
 
-            <!-- <button class="button-gradient px-3 py-2 text-lg font-semibold text-white">
+          <!-- <button class="button-gradient px-3 py-2 text-lg font-semibold text-white">
             Read More
             <i class="fa-solid fa-arrow-right"></i>
           </button> -->
 
-            <!-- Stats -->
-            <!-- <div
+          <!-- Stats -->
+          <!-- <div
               id="stats"
               class="grid grid-cols-1 md:grid-cols-4 gap-10 bg-accent justify-between items-center px-6 py-6 lg:translate-x-20"
             >
@@ -247,268 +200,229 @@
                 <p class="text-xs">Daily New Users</p>
               </div>
             </div> -->
-          </div>
+        </div>
 
-          <!-- <img
+        <!-- <img
             src="https://html.awaikenthemes.com/appiest/5-photo-editing-app-template/images/about.jpg"
             alt="About Us"
             class=""
           /> -->
-        </div>
       </div>
+    </div>
 
-      <!-- Feature Section -->
-      <div class="w-full flex justify-center items-center py-16">
-        <div
-          class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
-          id="features"
-        >
-          <div
-            class="flex flex-col justify-around items-center text-center gap-10"
-          >
-            <!-- Feature Title -->
-            <div class="flex flex-col gap-2 text-secondary items-center">
-              <span class="font-medium section-title">Features</span>
-              <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
-                Features that Make Us Different
-              </h2>
+    <!-- Feature Section -->
+    <div class="w-full flex justify-center items-center py-16">
+      <div
+        class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
+        id="features">
+        <div class="flex flex-col justify-around items-center text-center gap-10">
+          <!-- Feature Title -->
+          <div class="flex flex-col gap-2 text-secondary items-center">
+            <span class="font-medium section-title">Features</span>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
+              Features that Make Us Different
+            </h2>
+          </div>
+
+          <!-- Features -->
+          <div class="flex flex-col md:flex-row gap-10 text-muted text-balance mt-10">
+            <!-- Feature -->
+            <div class="flex flex-col justify-center items-center gap-6 group">
+              <i class="fa-solid fa-bolt text-5xl icon-gradient"></i>
+
+              <h3 class="text-secondary text-lg font-semibold">
+                Speedy Transactions
+              </h3>
+
+              <div class="w-full relative bg-accent h-[1px]">
+                <div
+                  class="absolute w-0 bg-secondary h-[1px] group-hover:w-full left-[50%] group-hover:left-0 transition-all duration-300">
+                </div>
+              </div>
+
+              <p class="text-muted text-balance">
+                Experience near-instant crypto transfers powered by
+                cutting-edge blockchain integrations.
+              </p>
             </div>
 
-            <!-- Features -->
-            <div
-              class="flex flex-col md:flex-row gap-10 text-muted text-balance mt-10"
-            >
-              <!-- Feature -->
-              <div
-                class="flex flex-col justify-center items-center gap-6 group"
-              >
-                <i class="fa-solid fa-bolt text-5xl icon-gradient"></i>
+            <!-- Feature -->
+            <div class="flex flex-col justify-center items-center gap-6 group">
+              <i class="fa-solid fa-box-archive text-5xl icon-gradient"></i>
 
-                <h3 class="text-secondary text-lg font-semibold">
-                  Speedy Transactions
-                </h3>
+              <h3 class="text-secondary text-lg font-semibold">
+                Secure Storage
+              </h3>
 
-                <div class="w-full relative bg-accent h-[1px]">
-                  <div
-                    class="absolute w-0 bg-secondary h-[1px] group-hover:w-full left-[50%] group-hover:left-0 transition-all duration-300"
-                  ></div>
+              <div class="w-full relative bg-accent h-[1px]">
+                <div
+                  class="absolute w-0 bg-secondary h-[1px] group-hover:w-full left-[50%] group-hover:left-0 transition-all duration-300">
                 </div>
-
-                <p class="text-muted text-balance">
-                  Experience near-instant crypto transfers powered by
-                  cutting-edge blockchain integrations.
-                </p>
               </div>
 
-              <!-- Feature -->
-              <div
-                class="flex flex-col justify-center items-center gap-6 group"
-              >
-                <i class="fa-solid fa-box-archive text-5xl icon-gradient"></i>
-
-                <h3 class="text-secondary text-lg font-semibold">
-                  Secure Storage
-                </h3>
-
-                <div class="w-full relative bg-accent h-[1px]">
-                  <div
-                    class="absolute w-0 bg-secondary h-[1px] group-hover:w-full left-[50%] group-hover:left-0 transition-all duration-300"
-                  ></div>
-                </div>
-
-                <p class="text-muted text-balance">
-                  Your assets are protected with military-grade encryption,
-                  biometric login, and multi-signature support.
-                </p>
-              </div>
-
-              <!-- Feature -->
-              <div
-                class="flex flex-col justify-center items-center gap-6 group"
-              >
-                <i class="fa-solid fa-mobile-android-alt text-5xl icon-gradient"></i>
-
-                <h3 class="text-secondary text-lg font-semibold">
-                  Minimalist Interface
-                </h3>
-
-                <div class="w-full relative bg-accent h-[1px]">
-                  <div
-                    class="absolute w-0 bg-secondary h-[1px] group-hover:w-full left-[50%] group-hover:left-0 transition-all duration-300"
-                  ></div>
-                </div>
-
-                <p class="text-muted text-balance">
-                  A clean, distraction-free design that keeps focus on what
-                  matters — your assets.
-                </p>
-              </div>
-
-              <!-- Feature -->
-              <div
-                class="flex flex-col justify-center items-center gap-6 group"
-              >
-                <i class="fa-solid fa-bitcoin-sign text-5xl icon-gradient"></i>
-
-                <h3 class="text-secondary text-lg font-semibold">
-                  Multi-Coin Support
-                </h3>
-
-                <div class="w-full relative bg-accent h-[1px]">
-                  <div
-                    class="absolute w-0 bg-secondary h-[1px] group-hover:w-full left-[50%] group-hover:left-0 transition-all duration-300"
-                  ></div>
-                </div>
-
-                <p class="text-muted text-balance">
-                  Store, swap, and manage a wide range of cryptocurrencies from
-                  one simple dashboard.
-                </p>
-              </div>
+              <p class="text-muted text-balance">
+                Your assets are protected with military-grade encryption,
+                biometric login, and multi-signature support.
+              </p>
             </div>
 
-            <!-- Feature List -->
-            <div
-              class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-6"
-            >
-              <!-- Item 1 -->
-              <div class="flex items-start gap-2">
-                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
-                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
+            <!-- Feature -->
+            <div class="flex flex-col justify-center items-center gap-6 group">
+              <i class="fa-solid fa-mobile-android-alt text-5xl icon-gradient"></i>
+
+              <h3 class="text-secondary text-lg font-semibold">
+                Minimalist Interface
+              </h3>
+
+              <div class="w-full relative bg-accent h-[1px]">
+                <div
+                  class="absolute w-0 bg-secondary h-[1px] group-hover:w-full left-[50%] group-hover:left-0 transition-all duration-300">
                 </div>
-                <span class="text-muted text-sm font-medium text-start"
-                  >Real-time Alerts</span
-                >
               </div>
 
-              <!-- Item 2 -->
-              <div class="flex items-start gap-2">
-                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
-                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
+              <p class="text-muted text-balance">
+                A clean, distraction-free design that keeps focus on what
+                matters — your assets.
+              </p>
+            </div>
+
+            <!-- Feature -->
+            <div class="flex flex-col justify-center items-center gap-6 group">
+              <i class="fa-solid fa-bitcoin-sign text-5xl icon-gradient"></i>
+
+              <h3 class="text-secondary text-lg font-semibold">
+                Multi-Coin Support
+              </h3>
+
+              <div class="w-full relative bg-accent h-[1px]">
+                <div
+                  class="absolute w-0 bg-secondary h-[1px] group-hover:w-full left-[50%] group-hover:left-0 transition-all duration-300">
                 </div>
-                <span class="text-muted text-sm font-medium text-start"
-                  >Cross-Platform Sync</span
-                >
               </div>
 
-              <!-- Item 3 -->
-              <div class="flex items-start gap-2">
-                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
-                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
-                </div>
-                <span class="text-muted text-sm font-medium text-start"
-                  >Instant Transactions</span
-                >
-              </div>
+              <p class="text-muted text-balance">
+                Store, swap, and manage a wide range of cryptocurrencies from
+                one simple dashboard.
+              </p>
+            </div>
+          </div>
 
-              <!-- Item 4 -->
-              <div class="flex items-start gap-2">
-                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
-                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
-                </div>
-                <span class="text-muted text-sm font-medium text-start"
-                  >Military-Grade Security</span
-                >
+          <!-- Feature List -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-6">
+            <!-- Item 1 -->
+            <div class="flex items-start gap-2">
+              <div class="bg-primary text-text-secondary rounded p-1 mt-1">
+                <i class="fa-solid fa-check fa-sm fa-fw"></i>
               </div>
+              <span class="text-muted text-sm font-medium text-start">Real-time Alerts</span>
+            </div>
 
-              <!-- Item 5 -->
-              <div class="flex items-start gap-2">
-                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
-                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
-                </div>
-                <span class="text-muted text-sm font-medium text-start"
-                  >Smart & Predictive UI</span
-                >
+            <!-- Item 2 -->
+            <div class="flex items-start gap-2">
+              <div class="bg-primary text-text-secondary rounded p-1 mt-1">
+                <i class="fa-solid fa-check fa-sm fa-fw"></i>
               </div>
+              <span class="text-muted text-sm font-medium text-start">Cross-Platform Sync</span>
+            </div>
 
-              <!-- Item 6 -->
-              <div class="flex items-start gap-2">
-                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
-                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
-                </div>
-                <span class="text-muted text-sm font-medium text-start"
-                  >Non-Custodial Wallet</span
-                >
+            <!-- Item 3 -->
+            <div class="flex items-start gap-2">
+              <div class="bg-primary text-text-secondary rounded p-1 mt-1">
+                <i class="fa-solid fa-check fa-sm fa-fw"></i>
               </div>
+              <span class="text-muted text-sm font-medium text-start">Instant Transactions</span>
+            </div>
 
-              <!-- Item 7 -->
-              <div class="flex items-start gap-2">
-                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
-                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
-                </div>
-                <span class="text-muted text-sm font-medium text-start"
-                  >Real-Time Alerts</span
-                >
+            <!-- Item 4 -->
+            <div class="flex items-start gap-2">
+              <div class="bg-primary text-text-secondary rounded p-1 mt-1">
+                <i class="fa-solid fa-check fa-sm fa-fw"></i>
               </div>
+              <span class="text-muted text-sm font-medium text-start">Military-Grade Security</span>
+            </div>
 
-              <!-- Item 8 -->
-              <div class="flex items-start gap-2">
-                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
-                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
-                </div>
-                <span class="text-muted text-sm font-medium text-start"
-                  >Built-in Swap Engine</span
-                >
+            <!-- Item 5 -->
+            <div class="flex items-start gap-2">
+              <div class="bg-primary text-text-secondary rounded p-1 mt-1">
+                <i class="fa-solid fa-check fa-sm fa-fw"></i>
               </div>
+              <span class="text-muted text-sm font-medium text-start">Smart & Predictive UI</span>
+            </div>
 
-              <!-- Item 9 -->
-              <div class="flex items-start gap-2">
-                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
-                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
-                </div>
-                <span class="text-muted text-sm font-medium text-start"
-                  >Custom Gas Controls</span
-                >
+            <!-- Item 6 -->
+            <div class="flex items-start gap-2">
+              <div class="bg-primary text-text-secondary rounded p-1 mt-1">
+                <i class="fa-solid fa-check fa-sm fa-fw"></i>
               </div>
+              <span class="text-muted text-sm font-medium text-start">Non-Custodial Wallet</span>
+            </div>
 
-              <!-- Item 10 -->
-              <div class="flex items-start gap-2">
-                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
-                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
-                </div>
-                <span class="text-muted text-sm font-medium text-start"
-                  >One-Tap QR Payments</span
-                >
+            <!-- Item 7 -->
+            <div class="flex items-start gap-2">
+              <div class="bg-primary text-text-secondary rounded p-1 mt-1">
+                <i class="fa-solid fa-check fa-sm fa-fw"></i>
               </div>
+              <span class="text-muted text-sm font-medium text-start">Real-Time Alerts</span>
+            </div>
 
-              <!-- Item 11 -->
-              <div class="flex items-start gap-2">
-                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
-                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
-                </div>
-                <span class="text-muted text-sm font-medium text-start"
-                  >dApp Browser Integration</span
-                >
+            <!-- Item 8 -->
+            <div class="flex items-start gap-2">
+              <div class="bg-primary text-text-secondary rounded p-1 mt-1">
+                <i class="fa-solid fa-check fa-sm fa-fw"></i>
               </div>
+              <span class="text-muted text-sm font-medium text-start">Built-in Swap Engine</span>
+            </div>
 
-              <!-- Item 12 -->
-              <div class="flex items-start gap-2">
-                <div class="bg-primary text-text-secondary rounded p-1 mt-1">
-                  <i class="fa-solid fa-check fa-sm fa-fw"></i>
-                </div>
-                <span class="text-muted text-sm font-medium text-start"
-                  >24/7 Human Support</span
-                >
+            <!-- Item 9 -->
+            <div class="flex items-start gap-2">
+              <div class="bg-primary text-text-secondary rounded p-1 mt-1">
+                <i class="fa-solid fa-check fa-sm fa-fw"></i>
               </div>
+              <span class="text-muted text-sm font-medium text-start">Custom Gas Controls</span>
+            </div>
+
+            <!-- Item 10 -->
+            <div class="flex items-start gap-2">
+              <div class="bg-primary text-text-secondary rounded p-1 mt-1">
+                <i class="fa-solid fa-check fa-sm fa-fw"></i>
+              </div>
+              <span class="text-muted text-sm font-medium text-start">One-Tap QR Payments</span>
+            </div>
+
+            <!-- Item 11 -->
+            <div class="flex items-start gap-2">
+              <div class="bg-primary text-text-secondary rounded p-1 mt-1">
+                <i class="fa-solid fa-check fa-sm fa-fw"></i>
+              </div>
+              <span class="text-muted text-sm font-medium text-start">dApp Browser Integration</span>
+            </div>
+
+            <!-- Item 12 -->
+            <div class="flex items-start gap-2">
+              <div class="bg-primary text-text-secondary rounded p-1 mt-1">
+                <i class="fa-solid fa-check fa-sm fa-fw"></i>
+              </div>
+              <span class="text-muted text-sm font-medium text-start">24/7 Human Support</span>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Inspirations -->
-      <!-- <div class="w-full flex justify-center bg-surface">
+    <!-- Inspirations -->
+    <!-- <div class="w-full flex justify-center bg-surface">
       <div class="w-11/12 md:w-10/12 max-w-[1110px] flex gap-10 justify-center items-start">
         <div class="flex flex-col w-full md:w-8/12 gap-4 justify-center items-start py-20"> -->
-      <!-- Heading -->
-      <!-- <div class="flex flex-col gap-2 items-start">
+    <!-- Heading -->
+    <!-- <div class="flex flex-col gap-2 items-start">
             <span class="section-title font-medium">Inspirations</span>
             <h2 class="text-text text-4xl md:text-2xl lg:text-3xl font-bold">
               World best team run on appiest and they loved our product
             </h2>
           </div> -->
 
-      <!-- Description -->
-      <!-- <div class="flex flex-col gap-3 mt-10 items-start justify-center text-wrap text-muted">
+    <!-- Description -->
+    <!-- <div class="flex flex-col gap-3 mt-10 items-start justify-center text-wrap text-muted">
             <p>
               It is a long established fact that a reader will be distracted
               by the readable content of a page when looking at its layout.
@@ -530,812 +444,646 @@
       </div>
     </div> -->
 
-      <!-- Our Clients -->
-      <div class="w-full flex justify-center items-center py-16 lg:py-16">
-        <div
-          class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
-          id="testimonial"
-        >
-          <div
-            class="flex flex-col justify-around items-center text-center gap-10"
-          >
-            <!-- our Clients Title -->
-            <div class="flex flex-col gap-2 text-secondary items-center">
-              <span class="font-medium section-title">Our Clients</span>
-              <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
-                Trusted by Top Brands
-              </h2>
-            </div>
+    <!-- Our Clients -->
+    <div class="w-full flex justify-center items-center py-16 lg:py-16">
+      <div
+        class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
+        id="testimonial">
+        <div class="flex flex-col justify-around items-center text-center gap-10">
+          <!-- our Clients Title -->
+          <div class="flex flex-col gap-2 text-secondary items-center">
+            <span class="font-medium section-title">Our Clients</span>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
+              Trusted by Top Brands
+            </h2>
+          </div>
 
-            <!-- Description -->
-            <div class="flex flex-col gap-7 text-muted text-balance italic">
-              <p>“Backed by institutions. Built for everyone.”</p>
-            </div>
+          <!-- Description -->
+          <div class="flex flex-col gap-7 text-muted text-balance italic">
+            <p>“Backed by institutions. Built for everyone.”</p>
+          </div>
 
-            <!-- Clients -->
-            <div
-              class="grid grid-cols-2 sm:grid-cols-3 gap-6 place-items-center px-4 py-8"
-            >
-              <!-- Client Logo 1 -->
-              <img
-                src="/Appiest-2/images/binance.PNG"
-                alt="Client Logo"
-                class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition"
-              />
+          <!-- Clients -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 place-items-center px-4 py-8">
+            <!-- Client Logo 1 -->
+            <img src="/Appiest-2/images/binance.PNG" alt="Client Logo"
+              class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition" />
 
-              <!-- Client Logo 2 -->
-              <img
-                src="/Appiest-2/images/coinbase.PNG"
-                alt="Client Logo"
-                class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition"
-              />
+            <!-- Client Logo 2 -->
+            <img src="/Appiest-2/images/coinbase.PNG" alt="Client Logo"
+              class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition" />
 
-              <!-- Client Logo 3 -->
-              <img
-                src="/Appiest-2/images/kraken.PNG"
-                alt="Client Logo"
-                class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition"
-              />
+            <!-- Client Logo 3 -->
+            <img src="/Appiest-2/images/kraken.PNG" alt="Client Logo"
+              class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition" />
 
-              <!-- Client Logo 4 -->
-              <img
-                src="/Appiest-2/images/openai.png"
-                alt="Client Logo"
-                class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition"
-              />
+            <!-- Client Logo 4 -->
+            <img src="/Appiest-2/images/openai.png" alt="Client Logo"
+              class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition" />
 
-              <!-- Client Logo 5 -->
-              <img
-                src="/Appiest-2/images/polygon.PNG"
-                alt="Client Logo"
-                class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition"
-              />
+            <!-- Client Logo 5 -->
+            <img src="/Appiest-2/images/polygon.PNG" alt="Client Logo"
+              class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition" />
 
-              <!-- Client Logo 6 -->
-              <img
-                src="/Appiest-2/images/solana.PNG"
-                alt="Client Logo"
-                class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition"
-              />
+            <!-- Client Logo 6 -->
+            <img src="/Appiest-2/images/solana.PNG" alt="Client Logo"
+              class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition" />
 
-              <!-- Client Logo 7 -->
-              <!-- <img src="/images/coinbase.PNG"
+            <!-- Client Logo 7 -->
+            <!-- <img src="/images/coinbase.PNG"
               alt="Client Logo"
               class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition" /> -->
 
-              <!-- Client Logo 8 -->
-              <!-- <img src="/images/coinbase.PNG"
+            <!-- Client Logo 8 -->
+            <!-- <img src="/images/coinbase.PNG"
               alt="Client Logo"
               class="w-full max-w-[180px] object-contain grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition" /> -->
-            </div>
+          </div>
 
-            <!-- <button class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer">
+          <!-- <button class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer">
             View More Clients
             <i class="fa-solid fa-arrow-right"></i>
           </button> -->
-          </div>
         </div>
       </div>
+    </div>
 
-      <!-- FAQ -->
-      <div class="w-full flex justify-center items-center py-16 lg:py-16">
-        <div
-          class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
-          id="faq"
-        >
-          <div
-            class="flex flex-col justify-around items-center text-center gap-10"
-          >
-            <!-- FAQ Title -->
-            <div class="flex flex-col gap-2 text-secondary items-center">
-              <span class="font-medium section-title">Any Questions ?</span>
-              <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
-                Frequently asked questions
-              </h2>
-            </div>
+    <!-- FAQ -->
+    <div class="w-full flex justify-center items-center py-16 lg:py-16">
+      <div
+        class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
+        id="faq">
+        <div class="flex flex-col justify-around items-center text-center gap-10">
+          <!-- FAQ Title -->
+          <div class="flex flex-col gap-2 text-secondary items-center">
+            <span class="font-medium section-title">Any Questions ?</span>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
+              Frequently asked questions
+            </h2>
+          </div>
 
-            <!-- Description -->
-            <!-- <div class="flex flex-col gap-7 text-muted text-balance">
+          <!-- Description -->
+          <!-- <div class="flex flex-col gap-7 text-muted text-balance">
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy
               text ever since the 1500s, when an unknown printer
             </p>
           </div> -->
-          </div>
         </div>
       </div>
-      <!-- Marquee FAQ -->
-      <div class="marquee-wrapper group bg-background py-8">
-        <div class="marquee-track">
-          <!-- FAQ Item 1 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              What is ZapWallet?
-            </h3>
-            <p class="text-sm">
-              A minimal, secure, and lightning-fast crypto wallet for everyone —
-              from beginners to experts.
-            </p>
-          </div>
+    </div>
+    <!-- Marquee FAQ -->
+    <div class="marquee-wrapper group bg-background py-8">
+      <div class="marquee-track">
+        <!-- FAQ Item 1 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            What is ZapWallet?
+          </h3>
+          <p class="text-sm">
+            A minimal, secure, and lightning-fast crypto wallet for everyone —
+            from beginners to experts.
+          </p>
+        </div>
 
-          <!-- FAQ Item 2 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              Is ZapWallet secure?
-            </h3>
-            <p class="text-sm">
-              Yes, it uses end-to-end encryption, biometric access, and
-              non-custodial storage for full control.
-            </p>
-          </div>
+        <!-- FAQ Item 2 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            Is ZapWallet secure?
+          </h3>
+          <p class="text-sm">
+            Yes, it uses end-to-end encryption, biometric access, and
+            non-custodial storage for full control.
+          </p>
+        </div>
 
-          <!-- FAQ Item 3 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              Can I use ZapWallet on mobile and desktop?
-            </h3>
-            <p class="text-sm">
-              Absolutely! It's available on iOS, Android, Mac, and Windows.
-            </p>
-          </div>
+        <!-- FAQ Item 3 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            Can I use ZapWallet on mobile and desktop?
+          </h3>
+          <p class="text-sm">
+            Absolutely! It's available on iOS, Android, Mac, and Windows.
+          </p>
+        </div>
 
-          <!-- FAQ Item 4 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              How do I get started?
-            </h3>
-            <p class="text-sm">
-              Simply download the app and follow our 2-minute onboarding wizard.
-            </p>
-          </div>
+        <!-- FAQ Item 4 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            How do I get started?
+          </h3>
+          <p class="text-sm">
+            Simply download the app and follow our 2-minute onboarding wizard.
+          </p>
+        </div>
 
-          <!-- Duplicates for seamless loop -->
-          <!-- FAQ Item 1 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              What is ZapWallet?
-            </h3>
-            <p class="text-sm">
-              A minimal, secure, and lightning-fast crypto wallet for everyone —
-              from beginners to experts.
-            </p>
-          </div>
+        <!-- Duplicates for seamless loop -->
+        <!-- FAQ Item 1 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            What is ZapWallet?
+          </h3>
+          <p class="text-sm">
+            A minimal, secure, and lightning-fast crypto wallet for everyone —
+            from beginners to experts.
+          </p>
+        </div>
 
-          <!-- FAQ Item 2 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              Is ZapWallet secure?
-            </h3>
-            <p class="text-sm">
-              Yes, it uses end-to-end encryption, biometric access, and
-              non-custodial storage for full control.
-            </p>
-          </div>
+        <!-- FAQ Item 2 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            Is ZapWallet secure?
+          </h3>
+          <p class="text-sm">
+            Yes, it uses end-to-end encryption, biometric access, and
+            non-custodial storage for full control.
+          </p>
+        </div>
 
-          <!-- FAQ Item 3 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              Can I use ZapWallet on mobile and desktop?
-            </h3>
-            <p class="text-sm">
-              Absolutely! It's available on iOS, Android, Mac, and Windows.
-            </p>
-          </div>
+        <!-- FAQ Item 3 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            Can I use ZapWallet on mobile and desktop?
+          </h3>
+          <p class="text-sm">
+            Absolutely! It's available on iOS, Android, Mac, and Windows.
+          </p>
+        </div>
 
-          <!-- FAQ Item 4 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              How do I get started?
-            </h3>
-            <p class="text-sm">
-              Simply download the app and follow our 2-minute onboarding wizard.
-            </p>
-          </div>
+        <!-- FAQ Item 4 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            How do I get started?
+          </h3>
+          <p class="text-sm">
+            Simply download the app and follow our 2-minute onboarding wizard.
+          </p>
+        </div>
 
-          <!-- Duplicates for seamless loop -->
-          <!-- FAQ Item 1 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              What is ZapWallet?
-            </h3>
-            <p class="text-sm">
-              A minimal, secure, and lightning-fast crypto wallet for everyone —
-              from beginners to experts.
-            </p>
-          </div>
+        <!-- Duplicates for seamless loop -->
+        <!-- FAQ Item 1 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            What is ZapWallet?
+          </h3>
+          <p class="text-sm">
+            A minimal, secure, and lightning-fast crypto wallet for everyone —
+            from beginners to experts.
+          </p>
+        </div>
 
-          <!-- FAQ Item 2 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              Is ZapWallet secure?
-            </h3>
-            <p class="text-sm">
-              Yes, it uses end-to-end encryption, biometric access, and
-              non-custodial storage for full control.
-            </p>
-          </div>
+        <!-- FAQ Item 2 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            Is ZapWallet secure?
+          </h3>
+          <p class="text-sm">
+            Yes, it uses end-to-end encryption, biometric access, and
+            non-custodial storage for full control.
+          </p>
+        </div>
 
-          <!-- FAQ Item 3 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              Can I use ZapWallet on mobile and desktop?
-            </h3>
-            <p class="text-sm">
-              Absolutely! It's available on iOS, Android, Mac, and Windows.
-            </p>
-          </div>
+        <!-- FAQ Item 3 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            Can I use ZapWallet on mobile and desktop?
+          </h3>
+          <p class="text-sm">
+            Absolutely! It's available on iOS, Android, Mac, and Windows.
+          </p>
+        </div>
 
-          <!-- FAQ Item 4 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              How do I get started?
-            </h3>
-            <p class="text-sm">
-              Simply download the app and follow our 2-minute onboarding wizard.
-            </p>
-          </div>
-          <!-- Duplicates for seamless loop -->
-          <!-- FAQ Item 1 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              What is ZapWallet?
-            </h3>
-            <p class="text-sm">
-              A minimal, secure, and lightning-fast crypto wallet for everyone —
-              from beginners to experts.
-            </p>
-          </div>
+        <!-- FAQ Item 4 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            How do I get started?
+          </h3>
+          <p class="text-sm">
+            Simply download the app and follow our 2-minute onboarding wizard.
+          </p>
+        </div>
+        <!-- Duplicates for seamless loop -->
+        <!-- FAQ Item 1 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            What is ZapWallet?
+          </h3>
+          <p class="text-sm">
+            A minimal, secure, and lightning-fast crypto wallet for everyone —
+            from beginners to experts.
+          </p>
+        </div>
 
-          <!-- FAQ Item 2 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              Is ZapWallet secure?
-            </h3>
-            <p class="text-sm">
-              Yes, it uses end-to-end encryption, biometric access, and
-              non-custodial storage for full control.
-            </p>
-          </div>
+        <!-- FAQ Item 2 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            Is ZapWallet secure?
+          </h3>
+          <p class="text-sm">
+            Yes, it uses end-to-end encryption, biometric access, and
+            non-custodial storage for full control.
+          </p>
+        </div>
 
-          <!-- FAQ Item 3 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              Can I use ZapWallet on mobile and desktop?
-            </h3>
-            <p class="text-sm">
-              Absolutely! It's available on iOS, Android, Mac, and Windows.
-            </p>
-          </div>
+        <!-- FAQ Item 3 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            Can I use ZapWallet on mobile and desktop?
+          </h3>
+          <p class="text-sm">
+            Absolutely! It's available on iOS, Android, Mac, and Windows.
+          </p>
+        </div>
 
-          <!-- FAQ Item 4 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              How do I get started?
-            </h3>
-            <p class="text-sm">
-              Simply download the app and follow our 2-minute onboarding wizard.
-            </p>
-          </div>
-          <!-- Duplicates for seamless loop -->
-          <!-- FAQ Item 1 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              What is ZapWallet?
-            </h3>
-            <p class="text-sm">
-              A minimal, secure, and lightning-fast crypto wallet for everyone —
-              from beginners to experts.
-            </p>
-          </div>
+        <!-- FAQ Item 4 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            How do I get started?
+          </h3>
+          <p class="text-sm">
+            Simply download the app and follow our 2-minute onboarding wizard.
+          </p>
+        </div>
+        <!-- Duplicates for seamless loop -->
+        <!-- FAQ Item 1 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            What is ZapWallet?
+          </h3>
+          <p class="text-sm">
+            A minimal, secure, and lightning-fast crypto wallet for everyone —
+            from beginners to experts.
+          </p>
+        </div>
 
-          <!-- FAQ Item 2 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              Is ZapWallet secure?
-            </h3>
-            <p class="text-sm">
-              Yes, it uses end-to-end encryption, biometric access, and
-              non-custodial storage for full control.
-            </p>
-          </div>
+        <!-- FAQ Item 2 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            Is ZapWallet secure?
+          </h3>
+          <p class="text-sm">
+            Yes, it uses end-to-end encryption, biometric access, and
+            non-custodial storage for full control.
+          </p>
+        </div>
 
-          <!-- FAQ Item 3 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              Can I use ZapWallet on mobile and desktop?
-            </h3>
-            <p class="text-sm">
-              Absolutely! It's available on iOS, Android, Mac, and Windows.
-            </p>
-          </div>
+        <!-- FAQ Item 3 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            Can I use ZapWallet on mobile and desktop?
+          </h3>
+          <p class="text-sm">
+            Absolutely! It's available on iOS, Android, Mac, and Windows.
+          </p>
+        </div>
 
-          <!-- FAQ Item 4 -->
-          <div
-            class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0"
-          >
-            <div class="h-[1px] bg-muted"></div>
-            <h3 class="font-semibold text-secondary mb-2">
-              How do I get started?
-            </h3>
-            <p class="text-sm">
-              Simply download the app and follow our 2-minute onboarding wizard.
-            </p>
-          </div>
+        <!-- FAQ Item 4 -->
+        <div class="flex flex-col pt-3 w-[300px] text-start text-muted px-6 shrink-0">
+          <div class="h-[1px] bg-muted"></div>
+          <h3 class="font-semibold text-secondary mb-2">
+            How do I get started?
+          </h3>
+          <p class="text-sm">
+            Simply download the app and follow our 2-minute onboarding wizard.
+          </p>
         </div>
       </div>
+    </div>
 
-      <!-- Free Trial -->
-      <div class="w-full flex justify-center py-20 main-gradient">
-        <div
-          class="w-11/12 md:w-10/12 max-w-[1110px] flex gap-10 justify-center items-center"
-        >
-          <div
-            class="flex flex-col w-full md:w-6/12 gap-6 justify-center items-start py-20"
-          >
-            <!-- Heading -->
-            <div class="flex flex-col gap-2 items-start">
-              <span class="section-title font-medium text-text-secondary!"
-                >Free Trial</span
-              >
-              <h2
-                class="text-text-secondary text-3xl md:text-4xl lg:text-5xl font-bold text-balance"
-              >
-                Try ZapWallet Free
-              </h2>
-            </div>
-
-            <!-- Description -->
-            <div
-              class="flex flex-col gap-3 mt-10 items-start justify-center text-wrap text-text-secondary"
-            >
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer
-              </p>
-            </div>
-            <button
-              class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer"
-            >
-              Start Free Trial
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
+    <!-- Free Trial -->
+    <div class="w-full flex justify-center py-20 main-gradient">
+      <div class="w-11/12 md:w-10/12 max-w-[1110px] flex gap-10 justify-center items-center">
+        <div class="flex flex-col w-full md:w-6/12 gap-6 justify-center items-start py-20">
+          <!-- Heading -->
+          <div class="flex flex-col gap-2 items-start">
+            <span class="section-title font-medium text-text-secondary!">Free Trial</span>
+            <h2 class="text-text-secondary text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
+              Try ZapWallet Free
+            </h2>
           </div>
-          <div class="hidden md:flex w-6/12 justify-center items-center">
-            <img
-              src="/Appiest-2/images/logo.png"
-              alt="zapwallet"
-              class="brightness-0 invert filter saturate-0"
-            />
-          </div>
-        </div>
-      </div>
 
-      <!-- Our Team -->
-      <div class="w-full flex justify-center items-center py-16">
-        <div
-          class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
-          id="team"
-        >
-          <div
-            class="flex flex-col justify-around items-center text-center gap-10"
-          >
-            <!-- Team Title -->
-            <div class="flex flex-col gap-2 text-secondary items-center">
-              <span class="font-medium section-title">Our Team</span>
-              <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
-                Meet the Team Behind ZapWallet
-              </h2>
-
-              <!-- <p class="text-muted w-3/4 mt-5">
+          <!-- Description -->
+          <div class="flex flex-col gap-3 mt-10 items-start justify-center text-wrap text-text-secondary">
+            <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy
               text ever since the 1500s, when an unknown printer
-            </p> -->
-            </div>
-
-            <!-- Team Members -->
-            <div
-              class="flex flex-col md:flex-row gap-10 text-muted justify-center items-center text-balance mt-10 w-dvw"
-            >
-              <div
-                class="swiper mySwiper flex justify-center w-3/4 2xl:w-fit"
-              >
-                <div class="swiper-wrapper mb-10">
-                  <div class="swiper-slide" data-swiper-autoplay="2000">
-                    <!-- Member -->
-                    <div
-                      class="flex flex-col justify-center items-center gap-4 group"
-                    >
-                      <img
-                        src="/Appiest-2/images/team3.jpg"
-                        alt="Team Member"
-                        class="border-b-[1px] border-b-border px-6"
-                      />
-
-                      <h3 class="text-text text-xl font-bold">Nathan Carter</h3>
-
-                      <p class="text-sm text-muted -mt-3 font-semibold">
-                        Founder and CEO
-                      </p>
-
-                      <button
-                        class="button-gradient px-3 py-2 sm:text-xs md:text-sm lg:text-base font-semibold text-white cursor-pointer"
-                      >
-                        Contact
-                        <i class="fa-solid fa-arrow-right"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="swiper-slide" data-swiper-autoplay="2000">
-                    <!-- Member -->
-                    <div
-                      class="flex flex-col justify-center items-center gap-4 group"
-                    >
-                      <img
-                        src="/Appiest-2/images/team2.jpg"
-                        alt="Team Member"
-                        class="border-b-[1px] border-b-border px-6"
-                      />
-
-                      <h3 class="text-text text-xl font-bold">Emily Brooks</h3>
-
-                      <p class="text-sm text-muted -mt-3 font-semibold">
-                        Lead Blockchain Developer
-                      </p>
-
-                      <button
-                        class="button-gradient px-3 py-2 sm:text-xs md:text-sm lg:text-base font-semibold text-white cursor-pointer"
-                      >
-                        Contact
-                        <i class="fa-solid fa-arrow-right"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="swiper-slide" data-swiper-autoplay="2000">
-                    <!-- Member -->
-                    <div
-                      class="flex flex-col justify-center items-center gap-4 group"
-                    >
-                      <img
-                        src="/Appiest-2/images/team4.jpg"
-                        alt="Team Member"
-                        class="border-b-[1px] border-b-border px-6"
-                      />
-
-                      <h3 class="text-text text-xl font-bold">
-                        Olivia Bennett
-                      </h3>
-
-                      <p class="text-sm text-muted -mt-3 font-semibold">
-                        Product Design Head
-                      </p>
-
-                      <button
-                        class="button-gradient px-3 py-2 sm:text-xs md:text-sm lg:text-base font-semibold text-white cursor-pointer"
-                      >
-                        Contact
-                        <i class="fa-solid fa-arrow-right"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="swiper-slide" data-swiper-autoplay="2000">
-                    <!-- Member -->
-                    <div
-                      class="flex flex-col justify-center items-center gap-4 group"
-                    >
-                      <img
-                        src="/Appiest-2/images/team1.jpg"
-                        alt="Team Member"
-                        class="border-b-[1px] border-b-border px-6"
-                      />
-
-                      <h3 class="text-text text-xl font-bold">Daniel Reed</h3>
-
-                      <p class="text-sm text-muted -mt-3 font-semibold">
-                        Security officer
-                      </p>
-
-                      <button
-                        class="button-gradient px-3 py-2 sm:text-xs md:text-sm lg:text-base font-semibold text-white cursor-pointer"
-                      >
-                        Contact
-                        <i class="fa-solid fa-arrow-right"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
+            </p>
           </div>
-        </div>
-      </div>
-
-      <!-- Pricing Section -->
-      <div class="w-full flex justify-center items-center py-16">
-        <div
-          class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
-          id="pricing"
-        >
-          <div
-            class="flex flex-col justify-around items-center text-center gap-10"
-          >
-            <!-- Title -->
-            <div class="flex flex-col gap-2 text-secondary items-center">
-              <span class="font-medium section-title">Affordable Pricing</span>
-              <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
-                Flexible & Transparent Pricing
-              </h2>
-
-              <!-- <p class="text-muted w-3/4 mt-5">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy
-              text ever since the 1500s, when an unknown printer
-            </p> -->
-            </div>
-
-            <!-- Pricing Options -->
-            <div
-              class="flex flex-col lg:flex-row gap-10 text-muted justify-between text-balance mt-10"
-            >
-              <!-- Option -->
-              <div
-                class="flex flex-col justify-center items-center gap-4 pricing-button border-primary border-[1px] rounded-sm p-8 group transition-all"
-              >
-                <p
-                  class="text-muted text-center font-bold text-3xl group-hover:text-surface "
-                >
-                  Free Plan
-                </p>
-                <h4
-                  class="text-text text-center font-bold text-5xl group-hover:text-surface"
-                >
-                  $0.00
-                </h4>
-
-                <p
-                  class="text-muted text-center font-medium -mt-3 group-hover:text-surface"
-                >
-                  per month
-                </p>
-
-                <button
-                  class="w-full text-center text-lg font-semibold py-2.5 cursor-pointer transition-all"
-                >
-                  Start Free Trial
-                </button>
-                <div
-                  class="flex flex-col w-full gap-3 border-[1px] border-primary bg-background p-5 rounded-sm"
-                >
-                  <ul
-                    class="flex flex-col gap-2 plan-list text-sm font-medium text-start text-text"
-                  >
-                    <li>Up to 5 popular coins</li>
-                    <li>1 Device sync only</li>
-                    <li>Standard encryption</li>
-                    <li>Swap Engine Access Not available</li>
-                    <li>Email-only (48h response)</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Option -->
-              <div
-                class="flex flex-col justify-start items-center gap-4 pricing-button border-primary border-[1px] rounded-sm p-8 group transition-all"
-              >
-                <p
-                  class="text-muted text-center font-bold text-3xl group-hover:text-surface"
-                >
-                  Premium Plan
-                </p>
-                <h4
-                  class="text-text text-center font-bold text-5xl group-hover:text-surface"
-                >
-                  $10.99
-                </h4>
-
-                <p
-                  class="text-muted text-center font-medium -mt-3 group-hover:text-surface"
-                >
-                  per month
-                </p>
-
-                <button
-                  class="w-full text-center text-lg font-semibold py-2.5 cursor-pointer transition-all"
-                >
-                  Start Free Trial
-                </button>
-                <div
-                  class="flex flex-col w-full gap-3 border-[1px] border-primary bg-background p-5 rounded-sm"
-                >
-                  <ul
-                    class="flex flex-col gap-2 plan-list text-sm font-medium text-start text-text"
-                  >
-                    <li>100+ coins & tokens</li>
-                    <li>Up to 3 Devices</li>
-                    <li>Encrypted storage + Biometric Lock</li>
-                    <li>Basic token swaps</li>
-                    <li>Priority Email + Chat</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Option -->
-              <div
-                class="flex flex-col justify-center items-center gap-4 pricing-button border-primary border-[1px] rounded-sm p-8 group transition-all"
-              >
-                <p
-                  class="text-muted text-center font-bold text-3xl group-hover:text-surface"
-                >
-                  Pro Plan
-                </p>
-                <h4
-                  class="text-text text-center font-bold text-5xl group-hover:text-surface"
-                >
-                  $14.99
-                </h4>
-
-                <p
-                  class="text-muted text-center font-medium -mt-3 group-hover:text-surface"
-                >
-                  per month
-                </p>
-
-                <button
-                  class="w-full text-center text-lg font-semibold py-2.5 cursor-pointer transition-all"
-                >
-                  Start Pro Plan
-                </button>
-                <div
-                  class="flex flex-col w-full gap-3 border-[1px] border-primary bg-background p-5 rounded-sm"
-                >
-                  <ul
-                    class="flex flex-col gap-2 plan-list text-sm font-medium text-start text-text"
-                  >
-                    <li>Unlimited multi-chain coin support</li>
-                    <li>Unlimited Devices (Mobile + Desktop + Web)</li>
-                    <li>Cold wallet integration + Multi-signature vaults</li>
-                    <li>Advanced swap with fee customization</li>
-                    <li>24/7 Dedicated Support & Account Manager</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Footer -->
-      <footer class="flex w-full justify-center py-24 bg-accent">
-        <div
-          class="w-10/12 max-w-[1110px] flex flex-col justify-center items-center gap-1.5"
-        >
-          <!-- Links -->
-          <div
-            class="flex justify-center text-nowrap flex-wrap *:text-muted *:hover:text-text *:not-last:border-r-[1px] *:px-2 *:mb-2 font-medium mt-7"
-          >
-            <a href="#">Privacy Policy</a>
-            <a href="#">License</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Team</a>
-            <a href="#">Career</a>
-          </div>
-
-          <!-- Social Links -->
-          <div
-            class="flex justify-center text-nowrap flex-wrap items-center *:text-muted font-medium mt-5 gap-2 *:hover:text-primary *:tranistion-all"
-          >
-            <a href="#"><i class="fa-brands fa-facebook-f me-2"></i>Facebook</a>
-            <a href="#"><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
-            <a href="#"><i class="fa-brands fa-x-twitter me-2"></i>Twitter</a>
-            <a href="#"><i class="fa-brands fa-snapchat me-2"></i>Snapchat</a>
-          </div>
-
-          <button
-            class="button-gradient px-3 py-2 sm:text-xs md:text-sm lg:text-base font-semibold text-white cursor-pointer my-5"
-          >
-            Let's Connect
+          <button class="button-gradient px-3 py-2 text-lg font-semibold text-white cursor-pointer">
+            Start Free Trial
             <i class="fa-solid fa-arrow-right"></i>
           </button>
-          <!-- End Line -->
-          <div class="flex flex-col gap-2 text-center text-muted">
-            <p>Lorem Ipsum is simply dummy text of the printing</p>
-            <p>
-              Desiged by
-              <span
-                class="hover:text-primary transition-all underline cursor-pointer"
-                >LifeLinkr</span
-              >
-              with love & Smile
-            </p>
+        </div>
+        <div class="hidden md:flex w-6/12 justify-center items-center">
+          <img src="/Appiest-2/images/logo.png" alt="zapwallet" class="brightness-0 invert filter saturate-0" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Team -->
+    <div class="w-full flex justify-center items-center py-16">
+      <div
+        class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
+        id="team">
+        <div class="flex flex-col justify-around items-center text-center gap-10">
+          <!-- Team Title -->
+          <div class="flex flex-col gap-2 text-secondary items-center">
+            <span class="font-medium section-title">Our Team</span>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
+              Meet the Team Behind ZapWallet
+            </h2>
+
+            <!-- <p class="text-muted w-3/4 mt-5">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500s, when an unknown printer
+            </p> -->
+          </div>
+
+          <!-- Team Members -->
+          <div class="flex flex-col md:flex-row gap-10 text-muted justify-center items-center text-balance mt-10 w-dvw">
+            <div class="swiper mySwiper flex justify-center w-3/4 2xl:w-fit">
+              <div class="swiper-wrapper mb-10">
+                <div class="swiper-slide" data-swiper-autoplay="2000">
+                  <!-- Member -->
+                  <div class="flex flex-col justify-center items-center gap-4 group">
+                    <img src="/Appiest-2/images/team3.jpg" alt="Team Member" class="border-b-[1px] border-b-border px-6" />
+
+                    <h3 class="text-text text-xl font-bold">Nathan Carter</h3>
+
+                    <p class="text-sm text-muted -mt-3 font-semibold">
+                      Founder and CEO
+                    </p>
+
+                    <button
+                      class="button-gradient px-3 py-2 sm:text-xs md:text-sm lg:text-base font-semibold text-white cursor-pointer">
+                      Contact
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="2000">
+                  <!-- Member -->
+                  <div class="flex flex-col justify-center items-center gap-4 group">
+                    <img src="/Appiest-2/images/team2.jpg" alt="Team Member" class="border-b-[1px] border-b-border px-6" />
+
+                    <h3 class="text-text text-xl font-bold">Emily Brooks</h3>
+
+                    <p class="text-sm text-muted -mt-3 font-semibold">
+                      Lead Blockchain Developer
+                    </p>
+
+                    <button
+                      class="button-gradient px-3 py-2 sm:text-xs md:text-sm lg:text-base font-semibold text-white cursor-pointer">
+                      Contact
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="2000">
+                  <!-- Member -->
+                  <div class="flex flex-col justify-center items-center gap-4 group">
+                    <img src="/Appiest-2/images/team4.jpg" alt="Team Member" class="border-b-[1px] border-b-border px-6" />
+
+                    <h3 class="text-text text-xl font-bold">
+                      Olivia Bennett
+                    </h3>
+
+                    <p class="text-sm text-muted -mt-3 font-semibold">
+                      Product Design Head
+                    </p>
+
+                    <button
+                      class="button-gradient px-3 py-2 sm:text-xs md:text-sm lg:text-base font-semibold text-white cursor-pointer">
+                      Contact
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="2000">
+                  <!-- Member -->
+                  <div class="flex flex-col justify-center items-center gap-4 group">
+                    <img src="/Appiest-2/images/team1.jpg" alt="Team Member" class="border-b-[1px] border-b-border px-6" />
+
+                    <h3 class="text-text text-xl font-bold">Daniel Reed</h3>
+
+                    <p class="text-sm text-muted -mt-3 font-semibold">
+                      Security officer
+                    </p>
+
+                    <button
+                      class="button-gradient px-3 py-2 sm:text-xs md:text-sm lg:text-base font-semibold text-white cursor-pointer">
+                      Contact
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        slidesPerView: 1,
-        breakpoints: {
-          // when window width is >= 320px
-          640: {
-            slidesPerView: 2,
-          },
-          1028: {
-            slidesPerView: 3,
-          },
-          1530: {
-            slidesPerView: 4,
-          },
+
+    <!-- Pricing Section -->
+    <div class="w-full flex justify-center items-center py-16">
+      <div
+        class="flex flex-col lg:flex-row w-11/12 md:2-10/12 max-w-[1110px] justify-center items-center lg:items-stretch gap-6"
+        id="pricing">
+        <div class="flex flex-col justify-around items-center text-center gap-10">
+          <!-- Title -->
+          <div class="flex flex-col gap-2 text-secondary items-center">
+            <span class="font-medium section-title">Affordable Pricing</span>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
+              Flexible & Transparent Pricing
+            </h2>
+
+            <!-- <p class="text-muted w-3/4 mt-5">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500s, when an unknown printer
+            </p> -->
+          </div>
+
+          <!-- Pricing Options -->
+          <div class="flex flex-col lg:flex-row gap-10 text-muted justify-between text-balance mt-10">
+            <!-- Option -->
+            <div
+              class="flex flex-col justify-center items-center gap-4 pricing-button border-primary border-[1px] rounded-sm p-8 group transition-all">
+              <p class="text-muted text-center font-bold text-3xl group-hover:text-surface ">
+                Free Plan
+              </p>
+              <h4 class="text-text text-center font-bold text-5xl group-hover:text-surface">
+                $0.00
+              </h4>
+
+              <p class="text-muted text-center font-medium -mt-3 group-hover:text-surface">
+                per month
+              </p>
+
+              <button class="w-full text-center text-lg font-semibold py-2.5 cursor-pointer transition-all">
+                Start Free Trial
+              </button>
+              <div class="flex flex-col w-full gap-3 border-[1px] border-primary bg-background p-5 rounded-sm">
+                <ul class="flex flex-col gap-2 plan-list text-sm font-medium text-start text-text">
+                  <li>Up to 5 popular coins</li>
+                  <li>1 Device sync only</li>
+                  <li>Standard encryption</li>
+                  <li>Swap Engine Access Not available</li>
+                  <li>Email-only (48h response)</li>
+                </ul>
+              </div>
+            </div>
+
+
+            <!-- Option -->
+            <div
+              class="flex flex-col justify-center items-center lg:scale-105 gap-4 pricing-button border-primary border-[1px] rounded-sm p-8 group transition-all">
+              <p class="text-muted text-center font-bold text-3xl group-hover:text-surface">
+                Pro Plan
+              </p>
+              <h4 class="text-text text-center font-bold text-5xl group-hover:text-surface">
+                $14.99
+              </h4>
+
+              <p class="text-muted text-center font-medium -mt-3 group-hover:text-surface">
+                per month
+              </p>
+
+              <button class="w-full text-center text-lg font-semibold py-2.5 cursor-pointer transition-all">
+                Start Pro Plan
+              </button>
+              <div class="flex flex-col w-full gap-3 border-[1px] border-primary bg-background p-5 rounded-sm">
+                <ul class="flex flex-col gap-2 plan-list text-sm font-medium text-start text-text">
+                  <li>Unlimited multi-chain coin support</li>
+                  <li>Unlimited Devices (Mobile + Desktop + Web)</li>
+                  <li>Cold wallet integration + Multi-signature vaults</li>
+                  <li>Advanced swap with fee customization</li>
+                  <li>24/7 Dedicated Support & Account Manager</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Option -->
+            <div
+              class="flex flex-col justify-start items-center gap-4 pricing-button border-primary border-[1px] rounded-sm p-8 group transition-all">
+              <p class="text-muted text-center font-bold text-3xl group-hover:text-surface">
+                Premium Plan
+              </p>
+              <h4 class="text-text text-center font-bold text-5xl group-hover:text-surface">
+                $10.99
+              </h4>
+
+              <p class="text-muted text-center font-medium -mt-3 group-hover:text-surface">
+                per month
+              </p>
+
+              <button class="w-full text-center text-lg font-semibold py-2.5 cursor-pointer transition-all">
+                Start Free Trial
+              </button>
+              <div class="flex flex-col w-full gap-3 border-[1px] border-primary bg-background p-5 rounded-sm">
+                <ul class="flex flex-col gap-2 plan-list text-sm font-medium text-start text-text">
+                  <li>100+ coins & tokens</li>
+                  <li>Up to 3 Devices</li>
+                  <li>Encrypted storage + Biometric Lock</li>
+                  <li>Basic token swaps</li>
+                  <li>Priority Email + Chat</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="flex w-full justify-center py-24 bg-accent">
+      <div class="w-10/12 max-w-[1110px] flex flex-col justify-center items-center gap-1.5">
+        <!-- Links -->
+        <div
+          class="flex justify-center text-nowrap flex-wrap *:text-muted *:hover:text-text *:not-last:border-r-[1px] *:px-2 *:mb-2 font-medium mt-7">
+          <a href="#">Privacy Policy</a>
+          <a href="#">License</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Team</a>
+          <a href="#">Career</a>
+        </div>
+
+        <!-- Social Links -->
+        <div
+          class="flex justify-center text-nowrap flex-wrap items-center *:text-muted font-medium mt-5 gap-2 *:hover:text-primary *:tranistion-all">
+          <a href="#"><i class="fa-brands fa-facebook-f me-2"></i>Facebook</a>
+          <a href="#"><i class="fa-brands fa-instagram me-2"></i>Instagram</a>
+          <a href="#"><i class="fa-brands fa-x-twitter me-2"></i>Twitter</a>
+          <a href="#"><i class="fa-brands fa-snapchat me-2"></i>Snapchat</a>
+        </div>
+
+        <button
+          class="button-gradient px-3 py-2 sm:text-xs md:text-sm lg:text-base font-semibold text-white cursor-pointer my-5">
+          Let's Connect
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <!-- End Line -->
+        <div class="flex flex-col gap-2 text-center text-muted">
+          <p>Lorem Ipsum is simply dummy text of the printing</p>
+          <p>
+            Desiged by
+            <span class="hover:text-primary transition-all underline cursor-pointer">LifeLinkr</span>
+            with love & Smile
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      slidesPerView: 1,
+      breakpoints: {
+        // when window width is >= 320px
+        640: {
+          slidesPerView: 2,
         },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+        1028: {
+          slidesPerView: 3,
         },
-        freemode: true,
-      });
-    </script>
-    <!-- <script src="js/jquery.min.js"></script>
+        1530: {
+          slidesPerView: 4,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      freemode: true,
+    });
+  </script>
+  <!-- <script src="js/jquery.min.js"></script>
   <script src="js/parallaxie.min.js"></script> -->
-  </body>
+</body>
+
 </html>
